@@ -1329,6 +1329,8 @@ static void read_settings(void)
 #include <sys/wait.h>
 #include "rpc.h"
 
+namespace SS {
+
 /*
  *  Fake unused data and functions
  */
@@ -1592,3 +1594,5 @@ int main(int argc, char *argv[])
 	return 0;
 }
 #endif
+
+}  // namespace SS

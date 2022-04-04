@@ -67,6 +67,8 @@
 #define DEBUG 0
 #include "debug.h"
 
+namespace SS {
+
 static disk_factory *disk_factories[] = {
 #ifndef STANDALONE_GUI
 	disk_sparsebundle_factory,
@@ -1480,3 +1482,5 @@ void SysCDGetVolume(void *arg, uint8 &left, uint8 &right)
 #endif
 	}
 }
+
+}  // namespace SS

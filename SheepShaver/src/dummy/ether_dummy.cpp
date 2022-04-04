@@ -28,6 +28,8 @@
 #define DEBUG 0
 #include "debug.h"
 
+namespace SS {
+
 
 /*
  *  Init ethernet
@@ -90,3 +92,5 @@ void AO_transmit_packet(uint32 mp)
 void EtherIRQ(void)
 {
 }
+
+}  // namespace SS

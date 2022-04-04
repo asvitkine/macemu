@@ -23,6 +23,8 @@
 #include "prefs_editor.h"
 #include "user_strings.h"
 
+namespace SS {
+
 
 /*
  *  Show preferences editor
@@ -33,3 +35,5 @@ bool PrefsEditor(void)
 {
 	return true;
 }
+
+}  // namespace SS

@@ -39,6 +39,8 @@
 #define DEBUG 0
 #include "debug.h"
 
+namespace SS {
+
 
 // The currently selected audio parameters (indices in audio_sample_rates[]
 // etc. vectors)
@@ -678,3 +680,5 @@ void audio_set_speaker_volume(uint32 vol)
 
 	set_volume(vol);
 }
+
+}  // namespace SS

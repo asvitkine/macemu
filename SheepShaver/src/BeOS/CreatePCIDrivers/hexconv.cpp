@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+namespace SS {
+
 int main(int argc, char **argv)
 {
 	if (argc != 3) {
@@ -32,3 +34,5 @@ int main(int argc, char **argv)
 	fclose(fout);
 	return 0;
 }
+
+}  // namespace SS

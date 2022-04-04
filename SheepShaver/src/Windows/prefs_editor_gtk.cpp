@@ -37,6 +37,8 @@
 #include "util_windows.h"
 #include "b2ether/inc/b2ether_hl.h"
 
+namespace SS {
+
 
 // Global variables
 static GtkWidget *win;				// Preferences window
@@ -1958,3 +1960,5 @@ int main(int argc, char *argv[])
 
 	return 0;
 }
+
+}  // namespace SS

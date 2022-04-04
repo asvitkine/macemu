@@ -7,6 +7,8 @@
 
 #include <stdio.h>
 
+namespace SS {
+
 static area_id buffer_area;					// Packet buffer area
 static net_buffer *net_buffer_ptr;			// Pointer to packet buffer
 
@@ -47,3 +49,5 @@ int main(void)
 	}
 	return 0;
 }
+
+}  // namespace SS

@@ -45,6 +45,8 @@ using std::vector;
 #define DEBUG 0
 #include "debug.h"
 
+namespace SS {
+
 
 // .Disk Disk/drive icon
 const uint8 DiskIcon[258] = {
@@ -544,3 +546,5 @@ void DiskInterrupt(void)
 
 	mount_mountable_volumes();
 }
+
+}  // namespace SS

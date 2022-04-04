@@ -41,6 +41,10 @@
 #include "mon_disass.h"
 #endif
 
+namespace SS {
+	extern uint32 PVR;
+}
+
 // Define to enable const branches optimization
 #define FOLLOW_CONST_JUMPS 1
 
@@ -48,7 +52,7 @@
 static inline bool is_read_only_memory(uintptr addr)
 {
 #ifdef SHEEPSHAVER
-	if ((addr - ROMBase) < ROM_AREA_SIZE)
+	if ((addr - SS::ROMBase) < SS::ROM_AREA_SIZE)
 		return true;
 #endif
 	return false;
@@ -797,8 +801,7 @@ powerpc_cpu::compile_block(uint32 entry_point)
 				dg.gen_mov_32_T0_im(0xdead001f);
 				break;
 			case powerpc_registers::SPR_PVR: {
-				extern uint32 PVR;
-				dg.gen_mov_32_T0_im(PVR);
+				dg.gen_mov_32_T0_im(SS::PVR);
 				break;
 			}
 			default:

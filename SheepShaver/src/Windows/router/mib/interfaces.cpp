@@ -32,6 +32,8 @@
 
 #include "debug.h"
 
+namespace SS {
+
 static UINT ip_array[100];
 static UINT ip_array_sz = 0;
 
@@ -67,3 +69,5 @@ uint32 get_ip_by_index( int index )
 {
 	return index >= 0 && index < (int)ip_array_sz ? ip_array[index] : 0;
 }
+
+}  // namespace SS

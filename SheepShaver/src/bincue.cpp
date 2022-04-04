@@ -62,6 +62,8 @@ static int bincue_core_audio_callback(void);
 #define DEBUG 0
 #include "debug.h"
 
+namespace SS {
+
 #define MAXTRACK 100
 #define MAXLINE 512
 #define CD_FRAMES 75
@@ -1018,3 +1020,5 @@ static int bincue_core_audio_callback(void)
 	}
 }
 #endif
+
+}  // namespace SS

@@ -70,6 +70,8 @@
 #define DEBUG 0
 #include "debug.h"
 
+namespace SS {
+
 #ifndef NO_STD_NAMESPACE
 using std::sort;
 #endif
@@ -2582,3 +2584,5 @@ void video_set_dirty_area(int x, int y, int w, int h)
 
 	// XXX handle dirty bounding boxes for non-VOSF modes
 }
+
+}  // namespace SS

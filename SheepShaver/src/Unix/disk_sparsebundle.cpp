@@ -25,6 +25,8 @@
 #include <limits.h>
 #include <algorithm>
 
+namespace SS {
+
 #if defined __APPLE__ && defined __MACH__
 #define __MACOSX__ 1
 #endif
@@ -313,3 +315,5 @@ disk_generic::status disk_sparsebundle_factory(const char *path,
 		total_size);
 	return disk_generic::DISK_VALID;
 }
+
+}  // namespace SS

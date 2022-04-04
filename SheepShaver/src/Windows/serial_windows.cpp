@@ -43,6 +43,8 @@
 static void serial_log_write( char *s );
 #define SERIAL_LOG_FILE_NAME TEXT("serial.log")
 #include "debug.h"
+
+namespace SS {
 #undef D
 #define D(x) if(debug_serial != DB_SERIAL_NONE) (x);
 
@@ -1198,3 +1200,5 @@ unsigned int XSERDPort::output_func(void *arg)
 
 	return(0);
 }
+
+}  // namespace SS

@@ -34,6 +34,8 @@
 #define DEBUG 0
 #include "debug.h"
 
+namespace SS {
+
 #define MONITOR 0
 
 
@@ -871,3 +873,5 @@ status_t BeSERDPort::output_func(void *arg)
 	}
 	return 0;
 }
+
+}  // namespace SS

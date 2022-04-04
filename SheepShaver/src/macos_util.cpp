@@ -34,6 +34,8 @@
 #define DEBUG 0
 #include "debug.h"
 
+namespace SS {
+
 
 // Function pointers
 typedef long (*cu_ptr)(void *, uint32);
@@ -437,3 +439,5 @@ void Mac_sysfree(uint32 addr)
 {
 	DisposePtr(addr);
 }
+
+}  // namespace SS

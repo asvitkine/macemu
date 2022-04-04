@@ -30,6 +30,8 @@
 
 #include "debug.h"
 
+namespace SS {
+
 
 void dump_bytes( uint8 *packet, int length )
 {
@@ -48,3 +50,5 @@ void dump_bytes( uint8 *packet, int length )
   bug(buf);
 #endif
 }
+
+}  // namespace SS

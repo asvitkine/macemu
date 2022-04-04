@@ -789,6 +789,8 @@ void SheepMem::Exit(void)
 
 #ifdef USE_SDL_VIDEO
 #include <SDL_syswm.h>
+
+namespace SS {
 extern SDL_Window *sdl_window;
 HWND GetMainWindowHandle(void)
 {
@@ -895,3 +897,5 @@ static LRESULT CALLBACK low_level_keyboard_hook(int nCode, WPARAM wParam, LPARAM
 	// If we fall here, we weren't supposed to intercept it.
 	return CallNextHookEx(keyboard_hook, nCode, wParam, lParam);
 }
+
+}  // namespace SS

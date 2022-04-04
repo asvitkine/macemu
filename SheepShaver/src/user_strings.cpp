@@ -33,6 +33,8 @@
 #include "sysdeps.h"
 #include "user_strings.h"
 
+namespace SS {
+
 #ifdef __BEOS__
 #define ELLIPSIS "\xE2\x80\xA6"
 #else
@@ -199,3 +201,5 @@ user_string_def common_strings[] = {
 
 	{-1, NULL}	// End marker
 };
+
+}  // namespace SS

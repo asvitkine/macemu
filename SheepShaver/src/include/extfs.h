@@ -21,6 +21,8 @@
 #ifndef EXTFS_H
 #define EXTFS_H
 
+namespace SS {
+
 extern void ExtFSInit(void);
 extern void ExtFSExit(void);
 
@@ -47,5 +49,7 @@ extern const char *macroman_to_host_encoding(const char *filename); // What if t
 
 // Maximum length of full path name
 const int MAX_PATH_LENGTH = 1024;
+
+}  // namespace SS
 
 #endif

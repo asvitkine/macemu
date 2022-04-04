@@ -427,6 +427,8 @@ typedef struct timeval tm_time_t;
 #define PRECISE_TIMING_MACH 1
 #endif
 
+namespace SS {
+
 // Timing functions
 extern uint64 GetTicks_usec(void);
 extern void Delay_usec(uint64 usec);
@@ -435,6 +437,8 @@ extern void Delay_usec(uint64 usec);
 // Setup pthread attributes
 extern void Set_pthread_attr(pthread_attr_t *attr, int priority);
 #endif
+
+}  // namespace SS
 
 // Various definitions
 typedef struct rgb_color {

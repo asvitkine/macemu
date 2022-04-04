@@ -48,6 +48,10 @@
 #define DEBUG 0
 #include "debug.h"
 
+namespace SS {
+	extern uint32 PVR;
+}
+
 /**
  *	Illegal & NOP instructions
  **/
@@ -1160,8 +1164,7 @@ void powerpc_cpu::execute_mfspr(uint32 opcode)
 #ifdef SHEEPSHAVER
 	case powerpc_registers::SPR_SDR1:	d = 0xdead001f;	break;
 	case powerpc_registers::SPR_PVR: {
-		extern uint32 PVR;
-		d = PVR;
+		d = SS::PVR;
 		break;
 	}
 	default: d = 0;
@@ -1219,8 +1222,8 @@ static inline uint64 get_tb_ticks(void)
 {
 	uint64 ticks;
 #ifdef SHEEPSHAVER
-	const uint32 TBFreq = TimebaseSpeed;
-	ticks = muldiv64(GetTicks_usec(), TBFreq, 1000000);
+	const uint32 TBFreq = SS::TimebaseSpeed;
+	ticks = muldiv64(SS::GetTicks_usec(), TBFreq, 1000000);
 #else
 	const uint32 TBFreq = 25 * 1000 * 1000; // 25 MHz
 	ticks = muldiv64((uint64)clock(), TBFreq, CLOCKS_PER_SEC);

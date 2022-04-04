@@ -27,6 +27,8 @@
 using std::vector;
 #endif
 
+namespace SS {
+
 extern int32 AudioDispatch(uint32 params, uint32 ti);
 
 extern bool AudioAvailable;		// Flag: audio output available (from the software point of view)
@@ -95,5 +97,7 @@ enum {
 };
 
 extern uint32 audio_data;		// Mac address of global data area
+
+}  // namespace SS
 
 #endif

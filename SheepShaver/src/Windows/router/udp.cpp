@@ -41,6 +41,8 @@
 
 #include "debug.h"
 
+namespace SS {
+
 
 void CALLBACK udp_read_completion(
 	DWORD error,
@@ -204,3 +206,5 @@ void init_udp()
 void final_udp()
 {
 }
+
+}  // namespace SS

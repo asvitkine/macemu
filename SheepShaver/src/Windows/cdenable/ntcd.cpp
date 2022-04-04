@@ -29,6 +29,8 @@ extern "C" {
 #include "ntcd.h"
 #include "cdenable.h"
 
+namespace SS {
+
 static LPCTSTR sDriverShort   = TEXT("cdenable");
 static LPCTSTR sDriverLong    = TEXT("System32\\Drivers\\cdenable.sys");
 static LPCTSTR sCompleteName  = TEXT("\\\\.\\cdenable");
@@ -342,3 +344,5 @@ DWORD CdenableSysGetVersion( void )
 } //extern "C"
 #endif
 
+
+}  // namespace SS

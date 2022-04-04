@@ -48,6 +48,8 @@ using std::vector;
 #define DEBUG 0
 #include "debug.h"
 
+namespace SS {
+
 
 // Check for inserted disks by polling?
 #ifdef AMIGA
@@ -558,3 +560,5 @@ void SonyInterrupt(void)
 
 	mount_mountable_volumes();
 }
+
+}  // namespace SS

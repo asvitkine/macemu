@@ -23,6 +23,8 @@
 #include "xlowmem.h"
 #include "ether_defs.h"
 
+namespace SS {
+
 
 /*
  *  Driver Description structure
@@ -254,3 +256,5 @@ static asm int ether_rsrv(register queue_t *q)
 	mtctr	r0
 	bctr
 }
+
+}  // namespace SS

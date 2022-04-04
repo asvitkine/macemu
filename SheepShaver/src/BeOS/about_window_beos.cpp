@@ -28,6 +28,8 @@
 #include "version.h"
 #include "user_strings.h"
 
+namespace SS {
+
 
 // About window dimensions
 static const BRect about_frame = BRect(0, 0, 383, 99);
@@ -287,3 +289,5 @@ void OpenAboutWindow(void)
 {
 	new AboutWindowT;
 }
+
+}  // namespace SS

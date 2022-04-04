@@ -36,6 +36,8 @@
 
 #if defined(BINCUE)
 #include "bincue.h"
+
+namespace SS {
 #endif
 
 
@@ -383,3 +385,5 @@ static int play_startup(void *arg) {
 	}
 	return 0;
 }
+
+}  // namespace SS

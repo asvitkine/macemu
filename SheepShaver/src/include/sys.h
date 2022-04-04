@@ -21,6 +21,8 @@
 #ifndef SYS_H
 #define SYS_H
 
+namespace SS {
+
 // Supported media types
 enum {
 	MEDIA_FLOPPY		= 1,
@@ -72,5 +74,7 @@ extern bool SysCDStop(void *fh, uint8 lead_out_m, uint8 lead_out_s, uint8 lead_o
 extern bool SysCDScan(void *fh, uint8 start_m, uint8 start_s, uint8 start_f, bool reverse);
 extern void SysCDSetVolume(void *fh, uint8 left, uint8 right);
 extern void SysCDGetVolume(void *fh, uint8 &left, uint8 &right);
+
+}  // namespace SS
 
 #endif

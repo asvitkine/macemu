@@ -47,6 +47,8 @@ using std::min;
 #define DEBUG 0
 #include "debug.h"
 
+namespace SS {
+
 
 // File handles are pointers to these structures
 struct file_handle {
@@ -1133,3 +1135,5 @@ void SysCDGetVolume(void *arg, uint8 &left, uint8 &right)
 		}
 	}
 }
+
+}  // namespace SS

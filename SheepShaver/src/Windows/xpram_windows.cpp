@@ -25,6 +25,8 @@ typedef std::basic_string<TCHAR> tstring;
 
 #include "xpram.h"
 
+namespace SS {
+
 
 // XPRAM file name and path
 #if POWERPC_ROM
@@ -97,3 +99,5 @@ void ZapPRAM(void)
 	// Delete file
 	DeleteFile(xpram_path.c_str());
 }
+
+}  // namespace SS

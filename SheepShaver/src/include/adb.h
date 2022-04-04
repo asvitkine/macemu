@@ -21,6 +21,8 @@
 #ifndef ADB_H
 #define ADB_H
 
+namespace SS {
+
 extern void ADBInit(void);
 extern void ADBExit(void);
 
@@ -36,5 +38,7 @@ extern void ADBKeyUp(int code);
 extern void ADBInterrupt(void);
 
 extern void ADBSetRelMouseMode(bool relative);
+
+}  // namespace SS
 
 #endif

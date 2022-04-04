@@ -35,6 +35,8 @@
 
 #include "debug.h"
 
+namespace SS {
+
 
 /*
 	Cannot link statically to winsock. We need ws2, but there are
@@ -183,3 +185,5 @@ void dynsockets_final(void)
 	_WSARecv = 0;
 	_inet_addr = 0;
 }
+
+}  // namespace SS

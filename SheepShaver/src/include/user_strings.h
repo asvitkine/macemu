@@ -21,6 +21,8 @@
 #ifndef USER_STRINGS_H
 #define USER_STRINGS_H
 
+namespace SS {
+
 // Common string numbers
 enum {
 	// General messages
@@ -200,5 +202,7 @@ extern user_string_def platform_strings[];
 
 // Fetch pointer to string, given the string number
 extern const char *GetString(int num);
+
+}  // namespace SS
 
 #endif

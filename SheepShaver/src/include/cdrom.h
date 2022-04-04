@@ -21,6 +21,8 @@
 #ifndef CDROM_H
 #define CDROM_H
 
+namespace SS {
+
 const int CDROMRefNum = -62;			// RefNum of driver
 const uint16 CDROMDriverFlags = 0x6d04;	// Driver flags
 
@@ -41,5 +43,7 @@ extern int16 CDROMControl(uint32 pb, uint32 dce);
 extern int16 CDROMStatus(uint32 pb, uint32 dce);
 
 extern void CDROMOpenDone(void); // Called by CDROMOpen() once drives have been to the drive queue
+
+}  // namespace SS
 
 #endif

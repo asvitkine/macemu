@@ -27,6 +27,8 @@
 #define DEBUG 0
 #include "debug.h"
 
+namespace SS {
+
 
 // Helper time functions
 #define MSECS2TICKS(MSECS) (((uint64)(MSECS) * frequency) / 1000)
@@ -266,3 +268,5 @@ void idle_resume(void)
 	}
 	UNLOCK_IDLE;
 }
+
+}  // namespace SS

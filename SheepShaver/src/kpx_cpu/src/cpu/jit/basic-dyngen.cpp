@@ -36,6 +36,12 @@ basic_dyngen::basic_dyngen(dyngen_cpu_base cpu)
 {
 }
 
+#ifdef SHEEPSHAVER
+namespace SS {
+extern void init_emul_op_trampolines(basic_dyngen & dg);
+}  // namespace SS
+#endif
+
 bool
 basic_dyngen::initialize(void)
 {
@@ -49,8 +55,7 @@ basic_dyngen::initialize(void)
 
 #if PPC_REENTRANT_JIT
 #ifdef SHEEPSHAVER
-	extern void init_emul_op_trampolines(basic_dyngen & dg);
-	init_emul_op_trampolines(*this);
+	SS::init_emul_op_trampolines(*this);
 	set_code_start(code_ptr());
 #endif
 #endif

@@ -23,6 +23,8 @@
 #include "xlowmem.h"
 #include "ether_defs.h"
 
+namespace SS {
+
 
 // Macro for tail-calling native code from assembly functions
 #define ASM_TAIL_CALL_NATIVE(NAME) \
@@ -306,3 +308,5 @@ asm void AO_transmit_packet(register uint32 mp)
 {
 	ASM_CALL_NATIVE(ETHER_AO_SEND_PACKET)
 }
+
+}  // namespace SS

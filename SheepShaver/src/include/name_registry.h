@@ -21,7 +21,11 @@
 #ifndef NAME_REGISTRY_H
 #define NAME_REGISTRY_H
 
+namespace SS {
+
 extern void DoPatchNameRegistry(void);
 extern void PatchNameRegistry(void);
+
+}  // namespace SS
 
 #endif

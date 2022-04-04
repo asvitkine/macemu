@@ -38,6 +38,8 @@
 #define DEBUG 0
 #include "debug.h"
 
+namespace SS {
+
 
 // Global variables
 static raw_device_command rdc;
@@ -235,3 +237,5 @@ bool scsi_send_cmd(size_t data_length, bool reading, int sg_size, uint8 **sg_ptr
 	}
 	return res ? false : true;
 }
+
+}  // namespace SS

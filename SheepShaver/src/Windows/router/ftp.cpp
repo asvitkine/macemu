@@ -33,6 +33,8 @@
 
 #include "debug.h"
 
+namespace SS {
+
 static int m_ftp_port_count = 0;
 #define MAX_FTP_PORTS 100
 static uint16 m_ftp_ports[MAX_FTP_PORTS];
@@ -191,3 +193,5 @@ void ftp_parse_port_command(
 		D(bug("ftp_parse_port_command: \"%s\"; port is %d\r\n", b, ftp_data_port ));
 	}
 }
+
+}  // namespace SS

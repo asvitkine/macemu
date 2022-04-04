@@ -27,6 +27,8 @@
 #define DEBUG 0
 #include "debug.h"
 
+namespace SS {
+
 
 // Global variables
 SERDPort *the_serd_port[2];
@@ -313,3 +315,5 @@ void SerialInterrupt(void)
 		}
 	}
 }
+
+}  // namespace SS

@@ -48,6 +48,8 @@ extern "C" {
 #define DEBUG 0
 #include "debug.h"
 
+namespace SS {
+
 #define MONITOR 0
 
 
@@ -831,3 +833,5 @@ void *XSERDPort::output_func(void *arg)
 	}
 	return NULL;
 }
+
+}  // namespace SS

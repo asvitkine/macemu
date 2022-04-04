@@ -21,6 +21,8 @@
 #ifndef SONY_H
 #define SONY_H
 
+namespace SS {
+
 const int SonyRefNum = -5;				// RefNum of driver
 const uint16 SonyDriverFlags = 0x6f00;	// Driver flags
 
@@ -41,5 +43,7 @@ extern int16 SonyOpen(uint32 pb, uint32 dce);
 extern int16 SonyPrime(uint32 pb, uint32 dce);
 extern int16 SonyControl(uint32 pb, uint32 dce);
 extern int16 SonyStatus(uint32 pb, uint32 dce);
+
+}  // namespace SS
 
 #endif

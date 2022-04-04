@@ -520,7 +520,7 @@ bool powerpc_cpu::check_spcflags()
 			processing_interrupt = true;
 			powerpc_registers r;
 			powerpc_registers::interrupt_copy(r, regs());
-			HandleInterrupt(&r);
+			SS::HandleInterrupt(&r);
 			powerpc_registers::interrupt_copy(regs(), r);
 			processing_interrupt = false;
 		}

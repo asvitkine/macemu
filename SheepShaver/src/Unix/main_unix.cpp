@@ -161,6 +161,11 @@
 // Interrupts in native mode?
 #define INTERRUPTS_IN_NATIVE_MODE 1
 
+extern void set_current_directory();
+extern void disable_SDL2_macosx_menu_bar_keyboard_shortcuts();
+extern std::string UserPrefsPath;
+
+namespace SS {
 
 // Constants
 const char ROM_FILE_NAME[] = "ROM";
@@ -758,7 +763,6 @@ int main(int argc, char **argv)
 #endif
 
 #if __MACOSX__
-	extern void set_current_directory();
 	set_current_directory();
 #endif
 	
@@ -799,7 +803,6 @@ int main(int argc, char **argv)
 		} else if (strcmp(argv[i], "--config") == 0) {
 			argv[i++] = NULL;
 			if (i < argc) {
-				extern std::string UserPrefsPath;
 				UserPrefsPath = argv[i];
 				argv[i] = NULL;
 			}
@@ -855,7 +858,6 @@ int main(int argc, char **argv)
 	//
 	// HACK: disable these shortcuts, while leaving all other pieces of SDL2's
 	// menu bar in-place.
-	extern void disable_SDL2_macosx_menu_bar_keyboard_shortcuts();
 	disable_SDL2_macosx_menu_bar_keyboard_shortcuts();
 #endif
 	
@@ -1122,7 +1124,6 @@ quit:
 	Quit();
 	return 0;
 }
-
 
 /*
  *  Cleanup and quit
@@ -2217,8 +2218,6 @@ rti:;
 }
 #endif
 
-extern int vm_init_reserved(void *hostAddress);
-
 /*
  *  Helpers to share 32-bit addressable data with MacOS
  */
@@ -2368,4 +2367,11 @@ bool ChoiceAlert(const char *text, const char *pos, const char *neg)
 {
 	printf(GetString(STR_SHELL_WARNING_PREFIX), text);
 	return false;	//!!
+}
+
+}  // namespace SS
+
+int main(int argc, char **argv)
+{
+	return SS::main(argc, argv);
 }

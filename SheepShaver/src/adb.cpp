@@ -41,6 +41,8 @@
 #define DEBUG 0
 #include "debug.h"
 
+namespace SS {
+
 
 // Global variables
 static int mouse_x = 0, mouse_y = 0;							// Mouse position
@@ -484,3 +486,5 @@ void ADBInterrupt(void)
 	WriteMacInt32(tmp_data, 0);
 	WriteMacInt32(tmp_data + 4, 0);
 }
+
+}  // namespace SS

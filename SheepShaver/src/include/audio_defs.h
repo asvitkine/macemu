@@ -23,6 +23,7 @@
 
 #include "macos_util.h"
 
+namespace SS {
 
 // Error codes
 enum {
@@ -153,5 +154,7 @@ enum {	// SoundInfoList struct
 	sil_count = 0,
 	sil_infoHandle = 2
 };
+
+}  // namespace SS
 
 #endif

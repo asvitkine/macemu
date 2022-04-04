@@ -29,6 +29,8 @@
 #define DEBUG 0
 #include "debug.h"
 
+namespace SS {
+
 
 // Driver private variables
 class DSERDPort : public SERDPort {
@@ -135,3 +137,5 @@ int16 DSERDPort::close()
 {
 	return noErr;
 }
+
+}  // namespace SS

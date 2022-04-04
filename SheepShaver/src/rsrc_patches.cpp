@@ -37,6 +37,8 @@
 #define DEBUG 0
 #include "debug.h"
 
+namespace SS {
+
 
 // Sound input driver
 static const uint8 sound_input_driver[] = {	// .AppleSoundInput driver header
@@ -1048,3 +1050,5 @@ void PatchNativeResourceManager(void)
 #endif
 #endif
 }
+
+}  // namespace SS

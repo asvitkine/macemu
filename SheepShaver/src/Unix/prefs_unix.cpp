@@ -27,7 +27,6 @@
 
 #include "prefs.h"
 
-
 // Platform-specific preferences items
 prefs_desc platform_prefs_items[] = {
 	{"ether", TYPE_STRING, false,          "device name of Mac ethernet adapter"},

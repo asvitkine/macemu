@@ -65,6 +65,7 @@ static void sheepshaver_write_byte(uintptr adr, uint32 b)
 }
 #endif
 
+namespace SS {
 
 /*
  *  Initialize everything, returns false on error
@@ -334,3 +335,5 @@ void PatchAfterStartup(void)
 	ExecuteNative(NATIVE_VIDEO_INSTALL_ACCEL);
 	InstallExtFS();
 }
+
+}  // namespace SS

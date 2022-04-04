@@ -32,6 +32,8 @@
 #define DEBUG 0
 #include "debug.h"
 
+namespace SS {
+
 #ifndef NO_STD_NAMESPACE
 using std::vector;
 #endif
@@ -279,3 +281,5 @@ static void do_getscrap(void **handle, uint32 type, int32 offset)
 	}
 	CloseClipboard();
 }
+
+}  // namespace SS

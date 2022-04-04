@@ -72,6 +72,8 @@
 
 #include "debug.h"
 
+namespace SS {
+
 MibExtLoad::MibExtLoad( LPCTSTR MibDllName, LPCTSTR SnmpDllName )
 {
 	m_Init = NULL;
@@ -306,3 +308,5 @@ void MibII::GetIPMask( UINT IpArray[], UINT &IpArraySize )
 	
 	SNMP_FreeVarBind(&varBind[0]);
 }
+
+}  // namespace SS

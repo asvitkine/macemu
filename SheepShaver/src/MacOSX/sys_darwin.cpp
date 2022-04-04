@@ -43,6 +43,8 @@
 #include "sys.h"
 #include "prefs.h"
 
+namespace SS {
+
 #define DEBUG 0
 #import "debug.h"
 
@@ -438,3 +440,5 @@ bool DarwinCDReadTOC(char *name, uint8 *toc)
 	return true;
 }
 #endif
+
+}  // namespace SS

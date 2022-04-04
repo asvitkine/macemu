@@ -49,6 +49,8 @@
 #define TYPE_SND  FOURCC('s','n','d',' ')
 #define TYPE_ICNS FOURCC('i','c','n','s')
 
+namespace SS {
+
 static NSPasteboard *g_pboard;
 static NSInteger g_pb_change_count = 0;
 
@@ -1286,3 +1288,5 @@ void PutScrap(uint32_t type, void *scrap, int32_t length)
 		g_pb_change_count = [g_pboard changeCount];
 	}
 }
+
+}  // namespace SS

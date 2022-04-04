@@ -90,6 +90,8 @@
 
 #include "debug.h"
 
+namespace SS {
+
 // If you need more, use multiple threads.
 #define MAX_SOCKETS MAXIMUM_WAIT_OBJECTS
 
@@ -1603,3 +1605,5 @@ void final_tcp()
 
 	DeleteCriticalSection( &tcp_section );
 }
+
+}  // namespace SS

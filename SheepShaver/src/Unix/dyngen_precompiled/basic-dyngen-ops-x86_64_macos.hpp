@@ -22,7 +22,9 @@
 	0x48,0x81,0xC2,0x00,0x00,0x00,0x00
 
 #ifdef DYNGEN_IMPL
+namespace SS {
 extern uint8 gZeroPage[0x3000], gKernelData[0x2000];
+}
 #endif
 
 #ifndef DEFINE_CST
@@ -1356,8 +1358,8 @@ DEFINE_GEN(gen_op_load_u8_T0_T1_0,void,(void))
        0x44, 0x0f, 0xb6, 0x20, 
     };
     copy_block(op_load_u8_T0_T1_0_code, 43);
-    *(uint32_t *)(code_ptr() + 27) = (uint32_t)(uintptr)gKernelData;
-    *(uint32_t *)(code_ptr() + 35) = (uint32_t)(uintptr)gZeroPage;
+    *(uint32_t *)(code_ptr() + 27) = (uint32_t)(uintptr)SS::gKernelData;
+    *(uint32_t *)(code_ptr() + 35) = (uint32_t)(uintptr)SS::gZeroPage;
     inc_code_ptr(43);
 }
 #endif
@@ -1372,8 +1374,8 @@ DEFINE_GEN(gen_op_store_8_T0_T1_0,void,(void))
        0x44, 0x88, 0x20, 
     };
     copy_block(op_store_8_T0_T1_0_code, 42);
-    *(uint32_t *)(code_ptr() + 27) = (uint32_t)(uintptr)gKernelData;
-    *(uint32_t *)(code_ptr() + 35) = (uint32_t)(uintptr)gZeroPage;
+    *(uint32_t *)(code_ptr() + 27) = (uint32_t)(uintptr)SS::gKernelData;
+    *(uint32_t *)(code_ptr() + 35) = (uint32_t)(uintptr)SS::gZeroPage;
     inc_code_ptr(42);
 }
 #endif
@@ -1389,8 +1391,8 @@ DEFINE_GEN(gen_op_load_s16_T0_T1_0,void,(void))
        0x66, 0xc1, 0xc0, 0x08, 0x44, 0x0f, 0xbf, 0xe0
     };
     copy_block(op_load_s16_T0_T1_0_code, 50);
-    *(uint32_t *)(code_ptr() + 27) = (uint32_t)(uintptr)gKernelData;
-    *(uint32_t *)(code_ptr() + 35) = (uint32_t)(uintptr)gZeroPage;
+    *(uint32_t *)(code_ptr() + 27) = (uint32_t)(uintptr)SS::gKernelData;
+    *(uint32_t *)(code_ptr() + 35) = (uint32_t)(uintptr)SS::gZeroPage;
     inc_code_ptr(50);
 }
 #endif
@@ -1406,8 +1408,8 @@ DEFINE_GEN(gen_op_load_s32_T0_T1_0,void,(void))
        0x41, 0x89, 0xc4, 0x41, 0x0f, 0xcc
     };
     copy_block(op_load_s32_T0_T1_0_code, 47);
-    *(uint32_t *)(code_ptr() + 27) = (uint32_t)(uintptr)gKernelData;
-    *(uint32_t *)(code_ptr() + 35) = (uint32_t)(uintptr)gZeroPage;
+    *(uint32_t *)(code_ptr() + 27) = (uint32_t)(uintptr)SS::gKernelData;
+    *(uint32_t *)(code_ptr() + 35) = (uint32_t)(uintptr)SS::gZeroPage;
     inc_code_ptr(47);
 }
 #endif
@@ -1449,8 +1451,8 @@ DEFINE_GEN(gen_op_load_u16_T0_T1_0,void,(void))
        0x66, 0xc1, 0xc0, 0x08, 0x44, 0x0f, 0xb7, 0xe0
     };
     copy_block(op_load_u16_T0_T1_0_code, 50);
-    *(uint32_t *)(code_ptr() + 27) = (uint32_t)(uintptr)gKernelData;
-    *(uint32_t *)(code_ptr() + 35) = (uint32_t)(uintptr)gZeroPage;
+    *(uint32_t *)(code_ptr() + 27) = (uint32_t)(uintptr)SS::gKernelData;
+    *(uint32_t *)(code_ptr() + 35) = (uint32_t)(uintptr)SS::gZeroPage;
     inc_code_ptr(50);
 }
 #endif
@@ -1466,8 +1468,8 @@ DEFINE_GEN(gen_op_load_u32_T0_T1_0,void,(void))
        0x41, 0x89, 0xc4, 0x41, 0x0f, 0xcc
     };
     copy_block(op_load_u32_T0_T1_0_code, 47);
-    *(uint32_t *)(code_ptr() + 27) = (uint32_t)(uintptr)gKernelData;
-    *(uint32_t *)(code_ptr() + 35) = (uint32_t)(uintptr)gZeroPage;
+    *(uint32_t *)(code_ptr() + 27) = (uint32_t)(uintptr)SS::gKernelData;
+    *(uint32_t *)(code_ptr() + 35) = (uint32_t)(uintptr)SS::gZeroPage;
     inc_code_ptr(47);
 }
 #endif
@@ -1482,8 +1484,8 @@ DEFINE_GEN(gen_op_load_u8_T0_T1_T2,void,(void))
        0x44, 0x0f, 0xb6, 0x20, 
     };
     copy_block(op_load_u8_T0_T1_T2_code, 44);
-    *(uint32_t *)(code_ptr() + 28) = (uint32_t)(uintptr)gKernelData;
-    *(uint32_t *)(code_ptr() + 36) = (uint32_t)(uintptr)gZeroPage;
+    *(uint32_t *)(code_ptr() + 28) = (uint32_t)(uintptr)SS::gKernelData;
+    *(uint32_t *)(code_ptr() + 36) = (uint32_t)(uintptr)SS::gZeroPage;
     inc_code_ptr(44);
 }
 #endif
@@ -1499,8 +1501,8 @@ DEFINE_GEN(gen_op_load_u8_T0_T1_im,void,(long param1))
        0x44, 0x0f, 0xb6, 0x20,
     };
     copy_block(op_load_u8_T0_T1_im_code, 52);
-    *(uint32_t *)(code_ptr() + 36) = (uint32_t)(uintptr)gKernelData;
-    *(uint32_t *)(code_ptr() + 44) = (uint32_t)(uintptr)gZeroPage;
+    *(uint32_t *)(code_ptr() + 36) = (uint32_t)(uintptr)SS::gKernelData;
+    *(uint32_t *)(code_ptr() + 44) = (uint32_t)(uintptr)SS::gZeroPage;
     *(uint32_t *)(code_ptr() + 6) = (int32_t)((long)param1 - (long)(code_ptr() + 6 + 4)) + 0;
     inc_code_ptr(52);
 }
@@ -1516,8 +1518,8 @@ DEFINE_GEN(gen_op_store_16_T0_T1_0,void,(void))
        0x66, 0x89, 0x02, 
     };
     copy_block(op_store_16_T0_T1_0_code, 54);
-    *(uint32_t *)(code_ptr() + 38) = (uint32_t)(uintptr)gKernelData;
-    *(uint32_t *)(code_ptr() + 47) = (uint32_t)(uintptr)gZeroPage;
+    *(uint32_t *)(code_ptr() + 38) = (uint32_t)(uintptr)SS::gKernelData;
+    *(uint32_t *)(code_ptr() + 47) = (uint32_t)(uintptr)SS::gZeroPage;
     inc_code_ptr(54);
 }
 #endif
@@ -1532,8 +1534,8 @@ DEFINE_GEN(gen_op_store_32_T0_T1_0,void,(void))
        0x89, 0x10, 
     };
     copy_block(op_store_32_T0_T1_0_code, 46);
-    *(uint32_t *)(code_ptr() + 32) = (uint32_t)(uintptr)gKernelData;
-    *(uint32_t *)(code_ptr() + 40) = (uint32_t)(uintptr)gZeroPage;
+    *(uint32_t *)(code_ptr() + 32) = (uint32_t)(uintptr)SS::gKernelData;
+    *(uint32_t *)(code_ptr() + 40) = (uint32_t)(uintptr)SS::gZeroPage;
     inc_code_ptr(46);
 }
 #endif
@@ -1548,8 +1550,8 @@ DEFINE_GEN(gen_op_store_8_T0_T1_T2,void,(void))
        0x44, 0x88, 0x20, 
     };
     copy_block(op_store_8_T0_T1_T2_code, 43);
-    *(uint32_t *)(code_ptr() + 28) = (uint32_t)(uintptr)gKernelData;
-    *(uint32_t *)(code_ptr() + 36) = (uint32_t)(uintptr)gZeroPage;
+    *(uint32_t *)(code_ptr() + 28) = (uint32_t)(uintptr)SS::gKernelData;
+    *(uint32_t *)(code_ptr() + 36) = (uint32_t)(uintptr)SS::gZeroPage;
     inc_code_ptr(43);
 }
 #endif
@@ -1565,8 +1567,8 @@ DEFINE_GEN(gen_op_store_8_T0_T1_im,void,(long param1))
        0x44, 0x88, 0x20,
     };
     copy_block(op_store_8_T0_T1_im_code, 51);
-    *(uint32_t *)(code_ptr() + 36) = (uint32_t)(uintptr)gKernelData;
-    *(uint32_t *)(code_ptr() + 44) = (uint32_t)(uintptr)gZeroPage;
+    *(uint32_t *)(code_ptr() + 36) = (uint32_t)(uintptr)SS::gKernelData;
+    *(uint32_t *)(code_ptr() + 44) = (uint32_t)(uintptr)SS::gZeroPage;
     *(uint32_t *)(code_ptr() + 6) = (int32_t)((long)param1 - (long)(code_ptr() + 6 + 4)) + 0;
     inc_code_ptr(51);
 }
@@ -1583,8 +1585,8 @@ DEFINE_GEN(gen_op_load_s16_T0_T1_T2,void,(void))
        0x66, 0xc1, 0xc0, 0x08, 0x44, 0x0f, 0xbf, 0xe0
     };
     copy_block(op_load_s16_T0_T1_T2_code, 51);
-    *(uint32_t *)(code_ptr() + 28) = (uint32_t)(uintptr)gKernelData;
-    *(uint32_t *)(code_ptr() + 36) = (uint32_t)(uintptr)gZeroPage;
+    *(uint32_t *)(code_ptr() + 28) = (uint32_t)(uintptr)SS::gKernelData;
+    *(uint32_t *)(code_ptr() + 36) = (uint32_t)(uintptr)SS::gZeroPage;
     inc_code_ptr(51);
 }
 #endif
@@ -1601,8 +1603,8 @@ DEFINE_GEN(gen_op_load_s16_T0_T1_im,void,(long param1))
        0x66, 0xc1, 0xc0, 0x08, 0x44, 0x0f, 0xbf, 0xe0
     };
     copy_block(op_load_s16_T0_T1_im_code, 59);
-    *(uint32_t *)(code_ptr() + 36) = (uint32_t)(uintptr)gKernelData;
-    *(uint32_t *)(code_ptr() + 44) = (uint32_t)(uintptr)gZeroPage;
+    *(uint32_t *)(code_ptr() + 36) = (uint32_t)(uintptr)SS::gKernelData;
+    *(uint32_t *)(code_ptr() + 44) = (uint32_t)(uintptr)SS::gZeroPage;
     *(uint32_t *)(code_ptr() + 6) = (int32_t)((long)param1 - (long)(code_ptr() + 6 + 4)) + 0;
     inc_code_ptr(59);
 }
@@ -1619,8 +1621,8 @@ DEFINE_GEN(gen_op_load_s32_T0_T1_T2,void,(void))
        0x41, 0x89, 0xc4, 0x41, 0x0f, 0xcc
     };
     copy_block(op_load_s32_T0_T1_T2_code, 48);
-    *(uint32_t *)(code_ptr() + 28) = (uint32_t)(uintptr)gKernelData;
-    *(uint32_t *)(code_ptr() + 36) = (uint32_t)(uintptr)gZeroPage;
+    *(uint32_t *)(code_ptr() + 28) = (uint32_t)(uintptr)SS::gKernelData;
+    *(uint32_t *)(code_ptr() + 36) = (uint32_t)(uintptr)SS::gZeroPage;
     inc_code_ptr(48);
 }
 #endif
@@ -1637,8 +1639,8 @@ DEFINE_GEN(gen_op_load_s32_T0_T1_im,void,(long param1))
        0x41, 0x89, 0xc4, 0x41, 0x0f, 0xcc
     };
     copy_block(op_load_s32_T0_T1_im_code, 56);
-    *(uint32_t *)(code_ptr() + 36) = (uint32_t)(uintptr)gKernelData;
-    *(uint32_t *)(code_ptr() + 44) = (uint32_t)(uintptr)gZeroPage;
+    *(uint32_t *)(code_ptr() + 36) = (uint32_t)(uintptr)SS::gKernelData;
+    *(uint32_t *)(code_ptr() + 44) = (uint32_t)(uintptr)SS::gZeroPage;
     *(uint32_t *)(code_ptr() + 6) = (int32_t)((long)param1 - (long)(code_ptr() + 6 + 4)) + 0;
     inc_code_ptr(56);
 }
@@ -1655,8 +1657,8 @@ DEFINE_GEN(gen_op_load_u16_T0_T1_T2,void,(void))
        0x66, 0xc1, 0xc0, 0x08, 0x44, 0x0f, 0xb7, 0xe0
     };
     copy_block(op_load_u16_T0_T1_T2_code, 51);
-    *(uint32_t *)(code_ptr() + 28) = (uint32_t)(uintptr)gKernelData;
-    *(uint32_t *)(code_ptr() + 36) = (uint32_t)(uintptr)gZeroPage;
+    *(uint32_t *)(code_ptr() + 28) = (uint32_t)(uintptr)SS::gKernelData;
+    *(uint32_t *)(code_ptr() + 36) = (uint32_t)(uintptr)SS::gZeroPage;
     inc_code_ptr(51);
 }
 #endif
@@ -1673,8 +1675,8 @@ DEFINE_GEN(gen_op_load_u16_T0_T1_im,void,(long param1))
        0x66, 0xc1, 0xc0, 0x08, 0x44, 0x0f, 0xb7, 0xe0
     };
     copy_block(op_load_u16_T0_T1_im_code, 59);
-    *(uint32_t *)(code_ptr() + 36) = (uint32_t)(uintptr)gKernelData;
-    *(uint32_t *)(code_ptr() + 44) = (uint32_t)(uintptr)gZeroPage;
+    *(uint32_t *)(code_ptr() + 36) = (uint32_t)(uintptr)SS::gKernelData;
+    *(uint32_t *)(code_ptr() + 44) = (uint32_t)(uintptr)SS::gZeroPage;
     *(uint32_t *)(code_ptr() + 6) = (int32_t)((long)param1 - (long)(code_ptr() + 6 + 4)) + 0;
     inc_code_ptr(59);
 }
@@ -1691,8 +1693,8 @@ DEFINE_GEN(gen_op_load_u32_T0_T1_T2,void,(void))
        0x41, 0x89, 0xc4, 0x41, 0x0f, 0xcc
     };
     copy_block(op_load_u32_T0_T1_T2_code, 48);
-    *(uint32_t *)(code_ptr() + 28) = (uint32_t)(uintptr)gKernelData;
-    *(uint32_t *)(code_ptr() + 36) = (uint32_t)(uintptr)gZeroPage;
+    *(uint32_t *)(code_ptr() + 28) = (uint32_t)(uintptr)SS::gKernelData;
+    *(uint32_t *)(code_ptr() + 36) = (uint32_t)(uintptr)SS::gZeroPage;
     inc_code_ptr(48);
 }
 #endif
@@ -1709,8 +1711,8 @@ DEFINE_GEN(gen_op_load_u32_T0_T1_im,void,(long param1))
        0x41, 0x89, 0xc4, 0x41, 0x0f, 0xcc
     };
     copy_block(op_load_u32_T0_T1_im_code, 56);
-    *(uint32_t *)(code_ptr() + 36) = (uint32_t)(uintptr)gKernelData;
-    *(uint32_t *)(code_ptr() + 44) = (uint32_t)(uintptr)gZeroPage;
+    *(uint32_t *)(code_ptr() + 36) = (uint32_t)(uintptr)SS::gKernelData;
+    *(uint32_t *)(code_ptr() + 44) = (uint32_t)(uintptr)SS::gZeroPage;
     *(uint32_t *)(code_ptr() + 6) = (int32_t)((long)param1 - (long)(code_ptr() + 6 + 4)) + 0;
     inc_code_ptr(56);
 }
@@ -1726,8 +1728,8 @@ DEFINE_GEN(gen_op_store_16_T0_T1_T2,void,(void))
        0x66, 0x89, 0x02, 
     };
     copy_block(op_store_16_T0_T1_T2_code, 55);
-    *(uint32_t *)(code_ptr() + 39) = (uint32_t)(uintptr)gKernelData;
-    *(uint32_t *)(code_ptr() + 48) = (uint32_t)(uintptr)gZeroPage;
+    *(uint32_t *)(code_ptr() + 39) = (uint32_t)(uintptr)SS::gKernelData;
+    *(uint32_t *)(code_ptr() + 48) = (uint32_t)(uintptr)SS::gZeroPage;
     inc_code_ptr(55);
 }
 #endif
@@ -1744,8 +1746,8 @@ DEFINE_GEN(gen_op_store_16_T0_T1_im,void,(long param1))
        0x66, 0x89, 0x10,
     };
     copy_block(op_store_16_T0_T1_im_code, 58);
-    *(uint32_t *)(code_ptr() + 43) = (uint32_t)(uintptr)gKernelData;
-    *(uint32_t *)(code_ptr() + 51) = (uint32_t)(uintptr)gZeroPage;
+    *(uint32_t *)(code_ptr() + 43) = (uint32_t)(uintptr)SS::gKernelData;
+    *(uint32_t *)(code_ptr() + 51) = (uint32_t)(uintptr)SS::gZeroPage;
     *(uint32_t *)(code_ptr() + 13) = (int32_t)((long)param1 - (long)(code_ptr() + 13 + 4)) + 0;
     inc_code_ptr(58);
 }
@@ -1761,8 +1763,8 @@ DEFINE_GEN(gen_op_store_32_T0_T1_T2,void,(void))
        0x89, 0x0a, 
     };
     copy_block(op_store_32_T0_T1_T2_code, 54);
-    *(uint32_t *)(code_ptr() + 39) = (uint32_t)(uintptr)gKernelData;
-    *(uint32_t *)(code_ptr() + 48) = (uint32_t)(uintptr)gZeroPage;
+    *(uint32_t *)(code_ptr() + 39) = (uint32_t)(uintptr)SS::gKernelData;
+    *(uint32_t *)(code_ptr() + 48) = (uint32_t)(uintptr)SS::gZeroPage;
     inc_code_ptr(54);
 }
 #endif
@@ -1779,8 +1781,8 @@ DEFINE_GEN(gen_op_store_32_T0_T1_im,void,(long param1))
        0x89, 0x08,
     };
     copy_block(op_store_32_T0_T1_im_code, 55);
-    *(uint32_t *)(code_ptr() + 41) = (uint32_t)(uintptr)gKernelData;
-    *(uint32_t *)(code_ptr() + 49) = (uint32_t)(uintptr)gZeroPage;
+    *(uint32_t *)(code_ptr() + 41) = (uint32_t)(uintptr)SS::gKernelData;
+    *(uint32_t *)(code_ptr() + 49) = (uint32_t)(uintptr)SS::gZeroPage;
     *(uint32_t *)(code_ptr() + 11) = (int32_t)((long)param1 - (long)(code_ptr() + 11 + 4)) + 0;
     inc_code_ptr(55);
 }

@@ -40,6 +40,8 @@
 
 #include "debug.h"
 
+namespace SS {
+
 
 // ARP queries can be replied immediately.
 
@@ -94,3 +96,5 @@ bool write_arp( arp_t *req, int len )
 	}
 	return result;
 }
+
+}  // namespace SS

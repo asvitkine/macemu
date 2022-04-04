@@ -25,6 +25,7 @@
 #include "thunks.h"
 #include <stddef.h>
 
+namespace SS {
 
 /*
  *  General definitions
@@ -374,5 +375,7 @@ static inline bool HasMacStarted(void)
 {
 	return ReadMacInt32(0xcfc) == FOURCC('W','L','S','C');	// Mac warm start flag
 }
+
+}  // namespace SS
 
 #endif

@@ -40,7 +40,9 @@ print << "EOM";
 	0x48,0x81,0xC2,0x00,0x00,0x00,0x00
 
 #ifdef DYNGEN_IMPL
+namespace SS {
 extern uint8 gZeroPage[0x3000], gKernelData[0x2000];
+}
 #endif
 
 EOM
@@ -149,8 +151,8 @@ while (<S>) {
 		}
 		elsif (/copy_block/) {
 			printf "    copy_block(%s, %d);\n", $name, $n;
-			printf "    *(uint32_t *)(code_ptr() + %d) = (uint32_t)(uintptr)gKernelData;\n", shift @ofs_k while @ofs_k;
-			printf "    *(uint32_t *)(code_ptr() + %d) = (uint32_t)(uintptr)gZeroPage;\n", shift @ofs_z while @ofs_z;
+			printf "    *(uint32_t *)(code_ptr() + %d) = (uint32_t)(uintptr)SS::gKernelData;\n", shift @ofs_k while @ofs_k;
+			printf "    *(uint32_t *)(code_ptr() + %d) = (uint32_t)(uintptr)SS::gZeroPage;\n", shift @ofs_z while @ofs_z;
 		}
 		elsif (/inc_code_ptr/) {
 			printf "    inc_code_ptr(%d);\n", $n;

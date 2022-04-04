@@ -31,6 +31,7 @@
 #define DEBUG 0
 #include "debug.h"
 
+namespace SS {
 
 // Function pointers
 typedef int16 (*rcec_ptr)(const RegEntryID *, const char *, RegEntryID *);
@@ -366,3 +367,5 @@ void PatchNameRegistry(void)
 	// Main routine must be executed in PPC mode
 	ExecuteNative(NATIVE_PATCH_NAME_REGISTRY);
 }
+
+}  // namespace SS

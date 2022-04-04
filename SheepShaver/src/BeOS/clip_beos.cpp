@@ -28,6 +28,8 @@
 #define DEBUG 0
 #include "debug.h"
 
+namespace SS {
+
 
 // Global variables
 static bool we_put_this_data = false;	// Flag for PutScrap(): the data was put by GetScrap(), don't bounce it back to the Be side
@@ -372,3 +374,5 @@ void GetScrap(void **handle, uint32 type, int32 offset)
 			break;
 	}
 }
+
+}  // namespace SS

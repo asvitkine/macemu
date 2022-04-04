@@ -21,6 +21,10 @@
 #ifndef ABOUT_WINDOW_H
 #define ABOUT_WINDOW_H
 
+namespace SS {
+
 extern void OpenAboutWindow(void);
+
+}  // namespace SS
 
 #endif

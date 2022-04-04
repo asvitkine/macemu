@@ -39,6 +39,8 @@
 #define DEBUG 0
 #include "debug.h"
 
+namespace SS {
+
 
 // Global variables
 bool video_activated = false;		// Flag: video display activated, mouse and keyboard data valid
@@ -1137,3 +1139,5 @@ int16 VideoDoDriverIO(uint32 spaceID, uint32 commandID, uint32 commandContents, 
 	else
 		return IOCommandIsComplete(commandID, err);
 }
+
+}  // namespace SS

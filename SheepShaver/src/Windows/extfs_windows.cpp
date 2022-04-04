@@ -34,6 +34,8 @@
 #define DEBUG 0
 #include "debug.h"
 
+namespace SS {
+
 
 // Constants
 #define HOST_DIRSEP_CHAR '\\'
@@ -411,3 +413,5 @@ const char *macroman_to_host_encoding(const char *filename)
 	return filename;
 }
 
+
+}  // namespace SS

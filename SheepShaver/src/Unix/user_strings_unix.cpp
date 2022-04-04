@@ -21,6 +21,8 @@
 #include "sysdeps.h"
 #include "user_strings.h"
 
+namespace SS {
+
 
 // Platform-specific string definitions
 user_string_def platform_strings[] = {
@@ -114,3 +116,5 @@ const char *GetString(int num)
 	}
 	return NULL;
 }
+
+}  // namespace SS

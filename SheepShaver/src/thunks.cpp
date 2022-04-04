@@ -32,6 +32,8 @@
 #include "ether.h"
 #include "macos_util.h"
 
+namespace SS {
+
 // Generate PowerPC thunks for GetResource() replacements?
 #define POWERPC_GET_RESOURCE_THUNKS 1
 
@@ -404,3 +406,5 @@ void ExecuteNative(int selector)
 	M68kRegisters r;
 	Execute68k(NativeRoutineDescriptor(selector), &r);
 }
+
+}  // namespace SS

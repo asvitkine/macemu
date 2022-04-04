@@ -42,6 +42,8 @@
 
 #include "AudioDevice.h"
 
+namespace SS {
+
 void	AudioDevice::Init(AudioDeviceID devid, bool isInput)
 {
 	mID = devid;
@@ -95,3 +97,5 @@ char *	AudioDevice::GetName(char *buf, UInt32 maxlen)
 	__Verify_noErr(AudioDeviceGetProperty(mID, 0, mIsInput, kAudioDevicePropertyDeviceName, &maxlen, buf));
 	return buf;
 }
+
+}  // namespace SS

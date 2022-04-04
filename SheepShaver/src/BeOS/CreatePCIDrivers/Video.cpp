@@ -21,6 +21,8 @@
 #include "sysdeps.h"
 #include "xlowmem.h"
 
+namespace SS {
+
 
 /*
  *  Driver Description structure
@@ -76,3 +78,5 @@ asm int16 DoDriverIO(void *spaceID, void *commandID, void *commandContents, uint
 	mtctr	r0
 	bctr
 }
+
+}  // namespace SS

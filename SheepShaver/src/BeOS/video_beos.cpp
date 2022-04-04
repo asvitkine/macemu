@@ -48,6 +48,8 @@ extern void SysMountVolume(const char *name);
 #include "video_window.h"
 #include "video_screen.h"
 
+namespace SS {
+
 
 /*
  *  Display manager thread (for opening and closing windows and screens;
@@ -785,3 +787,5 @@ void video_set_cursor(void)
 void video_set_dirty_area(int x, int y, int w, int h)
 {
 }
+
+}  // namespace SS

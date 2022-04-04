@@ -229,10 +229,11 @@ void *vm_acquire_reserved(size_t size) {
 	return reserved_buf && size <= RESERVED_SIZE ? reserved_buf : VM_MAP_FAILED;
 }
 
-int vm_init_reserved(void *hostAddress) {
-    int result = vm_acquire_fixed(hostAddress, RESERVED_SIZE);
+int vm_init_reserved(void *host_address)
+{
+    int result = vm_acquire_fixed(host_address, RESERVED_SIZE);
     if (result >= 0)
-        reserved_buf = hostAddress;
+        reserved_buf = host_address;
     return result;
 }
 

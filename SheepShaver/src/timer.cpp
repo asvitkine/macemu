@@ -36,6 +36,8 @@
 #define DEBUG 0
 #include "debug.h"
 
+namespace SS {
+
 
 #define TM_QUEUE 0			// Enable TMQueue management (doesn't work)
 
@@ -675,3 +677,5 @@ void TimerInterrupt(void)
 #endif
 #endif
 }
+
+}  // namespace SS

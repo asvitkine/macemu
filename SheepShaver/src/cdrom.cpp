@@ -47,6 +47,8 @@ using std::vector;
 #define DEBUG 0
 #include "debug.h"
 
+namespace SS {
+
 
 // CDROM disk/drive icon
 const uint8 CDROMIcon[258] = {
@@ -1142,3 +1144,5 @@ void CDROMInterrupt(void)
 	
 	mount_mountable_volumes();
 }
+
+}  // namespace SS

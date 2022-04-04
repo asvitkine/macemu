@@ -28,6 +28,8 @@
 #include "sysdeps.h"
 #include "xpram.h"
 
+namespace SS {
+
 
 // Extended parameter RAM
 uint8 XPRAM[XPRAM_SIZE];
@@ -56,3 +58,5 @@ void XPRAMExit(void)
 	// Save XPRAM to settings file
 	SaveXPRAM();
 }
+
+}  // namespace SS

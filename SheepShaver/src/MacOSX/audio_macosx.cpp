@@ -40,6 +40,8 @@
 #define DEBUG 0
 #include "debug.h"
 
+namespace SS {
+
 
 // The currently selected audio parameters (indices in
 // audio_sample_rates[] etc. vectors)
@@ -273,3 +275,5 @@ static int audioInt(void)
 }
 
 #endif
+
+}  // namespace SS

@@ -27,6 +27,8 @@
 #define DEBUG 0
 #include "debug.h"
 
+namespace SS {
+
 
 // From main_beos.cpp
 extern thread_id emul_thread;
@@ -164,3 +166,5 @@ void idle_resume(void)
 	resume_thread(emul_thread);
 #endif
 }
+
+}  // namespace SS

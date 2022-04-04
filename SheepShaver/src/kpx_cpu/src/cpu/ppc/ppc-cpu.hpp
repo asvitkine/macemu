@@ -512,7 +512,9 @@ inline void powerpc_cpu::trigger_interrupt()
 }
 
 #ifdef SHEEPSHAVER
+namespace SS {
 extern void HandleInterrupt(powerpc_registers *r);
+}  // namespace SS
 #endif
 
 #endif /* PPC_CPU_H */

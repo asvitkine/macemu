@@ -33,6 +33,8 @@
 #include "about_window.h"
 #include "user_strings.h"
 
+namespace SS {
+
 
 // Special colors
 const rgb_color fill_color = {216, 216, 216, 0};
@@ -875,3 +877,5 @@ void PrefsWindow::MessageReceived(BMessage *msg)
 			BWindow::MessageReceived(msg);
 	}
 }
+
+}  // namespace SS

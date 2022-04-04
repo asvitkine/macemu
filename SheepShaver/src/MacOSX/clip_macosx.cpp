@@ -30,6 +30,8 @@
 #define DEBUG 0
 #include "debug.h"
 
+namespace SS {
+
 
 // Flag for PutScrap(): the data was put by GetScrap(), don't bounce it back to the MacOS X side
 static bool we_put_this_data = false;
@@ -211,3 +213,5 @@ void PutScrap(uint32 type, void *scrap, int32 length)
 	SwapScrapData(type, scrap, length, FALSE); // swap it back
 #endif
 }
+
+}  // namespace SS

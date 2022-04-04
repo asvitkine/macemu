@@ -55,6 +55,8 @@
 
 #include "debug.h"
 
+namespace SS {
+
 
 uint16 next_ip_ident_number = 1;
 uint32 macos_ip_address = 0;
@@ -199,3 +201,5 @@ void router_final(void)
 	}
 	DeleteCriticalSection( &router_section );
 }
+
+}  // namespace SS

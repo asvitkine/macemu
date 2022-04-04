@@ -21,6 +21,8 @@
 #ifndef SERIAL_H
 #define SERIAL_H
 
+namespace SS {
+
 /*
  *  port:
  *    0 - .AIn
@@ -95,5 +97,7 @@ public:
 };
 
 extern SERDPort *the_serd_port[2];
+
+}  // namespace SS
 
 #endif

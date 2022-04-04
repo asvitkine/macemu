@@ -25,6 +25,8 @@
 #include <stdio.h>
 #include <unistd.h>
 
+namespace SS {
+
 
 // Constants
 const char APP_SIGNATURE[] = "application/x-vnd.cebix-SaveROM";
@@ -126,3 +128,5 @@ void SaveROM::ReadyToRun(void)
 done:
 	PostMessage(B_QUIT_REQUESTED);
 }
+
+}  // namespace SS

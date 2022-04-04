@@ -49,6 +49,7 @@ static inline void mach_current_time(tm_time_t &t) {
 }
 #endif
 
+namespace SS {
 
 /*
  *  Return microseconds since boot (64 bit)
@@ -325,6 +326,7 @@ void Delay_usec(uint64 usec)
 	} while (was_error && (errno == EINTR));
 }
 
+}  // namespace SS
 
 /*
  *  Suspend emulator thread, virtual CPU in idle mode
@@ -338,6 +340,7 @@ static pthread_cond_t idle_cond = PTHREAD_COND_INITIALIZER;
 #elif defined(HAVE_SEM_INIT)
 #define IDLE_USES_SEMAPHORE 1
 #include <semaphore.h>
+
 #ifdef HAVE_SPINLOCKS
 static spinlock_t idle_lock = SPIN_LOCK_UNLOCKED;
 #define LOCK_IDLE spin_lock(&idle_lock)
@@ -351,6 +354,8 @@ static sem_t idle_sem;
 static int idle_sem_ok = -1;
 #endif
 #endif
+
+namespace SS {
 
 void idle_wait(void)
 {
@@ -399,3 +404,5 @@ void idle_resume(void)
 #endif
 #endif
 }
+
+}  // namespace SS

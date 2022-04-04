@@ -67,6 +67,8 @@ extern "C" {
 #define EMUL_TIME_STATS 0
 #endif
 
+namespace SS {
+
 #if EMUL_TIME_STATS
 static clock_t emul_start_time;
 static uint32 interrupt_count = 0, ppc_interrupt_count = 0;
@@ -1200,53 +1202,56 @@ void Execute68kTrap(uint16 trap, M68kRegisters *r)
 	Execute68k(proc, r);
 }
 
+}  // namespace SS
+
 /*
  *  Call MacOS PPC code
  */
 
 uint32 call_macos(uint32 tvect)
 {
-	return ppc_cpu->execute_macos_code(tvect, 0, NULL);
+	return SS::ppc_cpu->execute_macos_code(tvect, 0, NULL);
 }
 
 uint32 call_macos1(uint32 tvect, uint32 arg1)
 {
 	const uint32 args[] = { arg1 };
-	return ppc_cpu->execute_macos_code(tvect, sizeof(args)/sizeof(args[0]), args);
+	return SS::ppc_cpu->execute_macos_code(tvect, sizeof(args)/sizeof(args[0]), args);
 }
 
 uint32 call_macos2(uint32 tvect, uint32 arg1, uint32 arg2)
 {
 	const uint32 args[] = { arg1, arg2 };
-	return ppc_cpu->execute_macos_code(tvect, sizeof(args)/sizeof(args[0]), args);
+	return SS::ppc_cpu->execute_macos_code(tvect, sizeof(args)/sizeof(args[0]), args);
 }
 
 uint32 call_macos3(uint32 tvect, uint32 arg1, uint32 arg2, uint32 arg3)
 {
 	const uint32 args[] = { arg1, arg2, arg3 };
-	return ppc_cpu->execute_macos_code(tvect, sizeof(args)/sizeof(args[0]), args);
+	return SS::ppc_cpu->execute_macos_code(tvect, sizeof(args)/sizeof(args[0]), args);
 }
 
 uint32 call_macos4(uint32 tvect, uint32 arg1, uint32 arg2, uint32 arg3, uint32 arg4)
 {
 	const uint32 args[] = { arg1, arg2, arg3, arg4 };
-	return ppc_cpu->execute_macos_code(tvect, sizeof(args)/sizeof(args[0]), args);
+	return SS::ppc_cpu->execute_macos_code(tvect, sizeof(args)/sizeof(args[0]), args);
 }
 
 uint32 call_macos5(uint32 tvect, uint32 arg1, uint32 arg2, uint32 arg3, uint32 arg4, uint32 arg5)
 {
 	const uint32 args[] = { arg1, arg2, arg3, arg4, arg5 };
-	return ppc_cpu->execute_macos_code(tvect, sizeof(args)/sizeof(args[0]), args);
+	return SS::ppc_cpu->execute_macos_code(tvect, sizeof(args)/sizeof(args[0]), args);
 }
 
 uint32 call_macos6(uint32 tvect, uint32 arg1, uint32 arg2, uint32 arg3, uint32 arg4, uint32 arg5, uint32 arg6)
 {
 	const uint32 args[] = { arg1, arg2, arg3, arg4, arg5, arg6 };
-	return ppc_cpu->execute_macos_code(tvect, sizeof(args)/sizeof(args[0]), args);
+	return SS::ppc_cpu->execute_macos_code(tvect, sizeof(args)/sizeof(args[0]), args);
 }
 
 uint32 call_macos7(uint32 tvect, uint32 arg1, uint32 arg2, uint32 arg3, uint32 arg4, uint32 arg5, uint32 arg6, uint32 arg7)
 {
 	const uint32 args[] = { arg1, arg2, arg3, arg4, arg5, arg6, arg7 };
-	return ppc_cpu->execute_macos_code(tvect, sizeof(args)/sizeof(args[0]), args);
+	return SS::ppc_cpu->execute_macos_code(tvect, sizeof(args)/sizeof(args[0]), args);
 }
+

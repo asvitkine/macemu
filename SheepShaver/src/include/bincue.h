@@ -21,6 +21,8 @@
 #ifndef BINCUE_H
 #define BINCUE_H
 
+namespace SS {
+
 extern void *open_bincue(const char *name);
 extern bool readtoc_bincue(void *, uint8 *);
 extern size_t read_bincue(void *, void *, loff_t,  size_t);
@@ -42,5 +44,7 @@ extern void CDGetVol_bincue(void *, uint8 *, uint8 *);
 extern void OpenAudio_bincue(int, int, int, uint8, int);
 extern void MixAudio_bincue(uint8 *, int, int);
 #endif
+
+}  // namespace SS
 
 #endif

@@ -27,7 +27,6 @@
 #include "sys.h"
 #include "prefs.h"
 
-
 // Prefs items are stored in a linked list of these nodes
 struct prefs_node {
 	prefs_node *next;

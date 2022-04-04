@@ -89,6 +89,8 @@ extern "C" {
 
 extern int vm_init(void);
 
+extern int vm_init_reserved(void *host_address);
+
 /* Deallocate all internal data used to wrap virtual memory allocators.  */
 
 extern void vm_exit(void);

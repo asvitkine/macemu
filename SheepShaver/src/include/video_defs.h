@@ -24,6 +24,7 @@
 #include "macos_util.h"
 #include <stddef.h>
 
+namespace SS {
 
 /* 
  * Definitions for Display Manager
@@ -409,5 +410,7 @@ enum {
 	// 5: lines
 	// 6: fill
 };
+
+}  // namespace SS
 
 #endif

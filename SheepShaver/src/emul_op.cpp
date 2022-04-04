@@ -50,10 +50,11 @@
 #define DEBUG 0
 #include "debug.h"
 
+namespace SS {
+
 
 // TVector of MakeExecutable
 static uint32 MakeExecutableTvec;
-
 
 /*
  *  Execute EMUL_OP opcode (called by 68k emulator)
@@ -494,3 +495,5 @@ void EmulOp(M68kRegisters *r, uint32 pc, int selector)
 			break;
 	}
 }
+
+}  // namespace SS

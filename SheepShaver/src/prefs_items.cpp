@@ -23,7 +23,6 @@
 #include "sys.h"
 #include "prefs.h"
 
-
 // Common preferences items (those which exist on all platforms)
 prefs_desc common_prefs_items[] = {
 	{"disk", TYPE_STRING, true,         "device/file name of Mac volume"},
@@ -83,7 +82,7 @@ prefs_desc common_prefs_items[] = {
 void AddPrefsDefaults(void)
 {
 #ifndef PREFS_EDITOR
-	SysAddSerialPrefs();
+	SS::SysAddSerialPrefs();
 #endif
 	PrefsAddInt32("bootdriver", 0);
 	PrefsAddInt32("bootdrive", 0);

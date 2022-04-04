@@ -32,6 +32,8 @@ extern "C" {
 #define DEBUG 0
 #include "debug.h"
 
+namespace SS {
+
 static disk_generic::status vhd_unix_open(const char *name, int *size,
 	bool read_only, vhd_context_t **ctx)
 {
@@ -158,3 +160,5 @@ disk_generic::status disk_vhd_factory(const char *path,
 		*disk = new disk_vhd(ctx, read_only, size);
 	return st;
 }
+
+}  // namespace SS

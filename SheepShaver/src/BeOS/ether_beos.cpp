@@ -30,6 +30,8 @@
 #define DEBUG 0
 #include "debug.h"
 
+namespace SS {
+
 #define STATISTICS 0
 #define MONITOR 0
 
@@ -398,3 +400,5 @@ void EtherIRQ(void)
 	}
 	OTLeaveInterrupt();
 }
+
+}  // namespace SS

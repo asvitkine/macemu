@@ -22,6 +22,8 @@
 
 #include "AudioBackEnd.h"
 
+namespace SS {
+
 #pragma mark ---Public Methods---
 
 AudioBackEnd::AudioBackEnd(int bitsPerSample, int numChannels, int sampleRate):
@@ -305,3 +307,5 @@ int AudioBackEnd::sendAudioBuffer(void *buffer, int numFrames) {
 
   return numFrames;
 }
+
+}  // namespace SS

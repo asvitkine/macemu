@@ -21,6 +21,17 @@
 #ifndef VIDEO_H
 #define VIDEO_H
 
+enum {	// viAppleMode
+	APPLE_1_BIT = 0x80,
+	APPLE_2_BIT,
+	APPLE_4_BIT,
+	APPLE_8_BIT,
+	APPLE_16_BIT,
+	APPLE_32_BIT
+};
+
+namespace SS {
+
 extern bool VideoActivated(void);
 extern bool VideoSnapshot(int xsize, int ysize, uint8 *p);
 
@@ -36,15 +47,6 @@ struct VideoInfo {
 };
 
 extern struct VideoInfo VModes[];	// List of available video modes
-
-enum {	// viAppleMode
-	APPLE_1_BIT = 0x80,
-	APPLE_2_BIT,
-	APPLE_4_BIT,
-	APPLE_8_BIT,
-	APPLE_16_BIT,
-	APPLE_32_BIT
-};
 
 // 1, 2, 4 and 8 bit depths use a color palette
 inline bool IsDirectMode(int mode)
@@ -160,5 +162,7 @@ extern void NQD_invrect(uint32);
 extern void NQD_fillrect(uint32);
 
 extern bool keyfile_valid;
+
+}  // namespace SS
 
 #endif

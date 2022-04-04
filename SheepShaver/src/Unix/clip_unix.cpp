@@ -69,6 +69,8 @@
 #define DEBUG 0
 #include "debug.h"
 
+namespace SS {
+
 #ifndef NO_STD_NAMESPACE
 using std::vector;
 #endif
@@ -689,3 +691,5 @@ void ClipboardSelectionRequest(XSelectionRequestEvent *req)
 
 	handle_selection(req, false);
 }
+
+}  // namespace SS

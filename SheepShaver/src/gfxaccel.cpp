@@ -27,6 +27,7 @@
 #define DEBUG 0
 #include "debug.h"
 
+namespace SS {
 
 /*
  *	Utility functions
@@ -459,3 +460,5 @@ void VideoInstallAccel(void)
 		}
 	}
 }
+
+}  // namespace SS

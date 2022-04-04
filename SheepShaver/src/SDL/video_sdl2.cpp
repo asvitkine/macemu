@@ -52,9 +52,12 @@
 
 #ifdef __MACOSX__
 #include "utils_macosx.h"
+extern bool is_fullscreen_osx(SDL_Window * window);
+extern void set_menu_bar_visible_osx(bool);
 #endif
 
 #ifdef WIN32
+#include <dbt.h>
 #include <malloc.h> /* alloca() */
 #endif
 
@@ -74,6 +77,8 @@
 
 #define CODE_INVALID -1
 #define CODE_HOTKEY  -2
+
+namespace SS {
 
 // Supported video modes
 using std::vector;
@@ -284,7 +289,6 @@ static inline int get_customized_color_depth(int default_depth)
  */
 
 #ifdef WIN32
-#include <dbt.h>
 static WNDPROC sdl_window_proc = NULL;				// Window proc used by SDL
 
 extern void SysMediaArrived(void);
@@ -1718,7 +1722,6 @@ static bool is_fullscreen(SDL_Window * window)
 	// involves fullscreen/windowed toggles via window-manager UI controls).
 	// Until it does, or adds a facility to do so, we'll use a platform-specific
 	// code path to detect fullscreen changes.
-	extern bool is_fullscreen_osx(SDL_Window * window);
 	return is_fullscreen_osx(sdl_window);
 #else
 	if (!window) {
@@ -2272,7 +2275,6 @@ static int SDLCALL on_sdl_event_generated(void *userdata, SDL_Event * event)
 						// cursor is near the top of the screen, lest the
 						// guest OS' menu bar be obscured.
 						if (is_full) {
-							extern void set_menu_bar_visible_osx(bool);
 							set_menu_bar_visible_osx(false);
 						}
 #endif
@@ -2857,5 +2859,7 @@ void video_set_dirty_area(int x, int y, int w, int h)
 	// XXX handle dirty bounding boxes for non-VOSF modes
 }
 #endif
+
+}  // namespace SS
 
 #endif	// ends: SDL version check

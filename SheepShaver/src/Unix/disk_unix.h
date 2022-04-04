@@ -23,6 +23,8 @@
 
 #include "sysdeps.h"
 
+namespace SS {
+
 struct disk_generic {
 	enum status {
 		DISK_UNKNOWN,
@@ -44,5 +46,7 @@ typedef disk_generic::status (disk_factory)(const char *path, bool read_only,
 
 extern disk_factory disk_sparsebundle_factory;
 extern disk_factory disk_vhd_factory;
+
+}  // namespace SS
 
 #endif

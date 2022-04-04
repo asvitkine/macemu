@@ -22,6 +22,8 @@
 #ifndef RPC_H
 #define RPC_H
 
+namespace SS {
+
 // Error Types
 enum {
   RPC_ERROR_NO_ERROR					= 0,
@@ -98,5 +100,7 @@ enum {
   RPC_METHOD_WARNING_ALERT,
   RPC_METHOD_EXIT
 };
+
+}  // namespace SS
 
 #endif /* RPC_H */

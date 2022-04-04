@@ -30,6 +30,8 @@
 using std::list;
 
 #include <string>
+
+namespace SS {
 using std::string;
 using std::wstring;
 typedef std::basic_string<TCHAR> tstring;
@@ -514,3 +516,5 @@ const TCHAR *ether_tap_devices(void)
 
 	return names;
 }
+
+}  // namespace SS

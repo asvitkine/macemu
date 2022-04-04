@@ -45,6 +45,8 @@
 #define DEBUG 0
 #include "debug.h"
 
+namespace SS {
+
 
 // 68k breakpoint address
 //#define M68K_BREAK_POINT 0x29e0		// BootMe
@@ -2481,3 +2483,5 @@ void InstallDrivers(void)
 	WriteMacInt32(dce + dCtlDriver, ROMBase + sony_offset + 0x600);
 	WriteMacInt16(dce + dCtlFlags, 0x4e00);
 }
+
+}  // namespace SS

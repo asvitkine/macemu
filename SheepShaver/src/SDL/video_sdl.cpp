@@ -252,6 +252,8 @@ static inline int get_customized_color_depth(int default_depth)
 
 #ifdef WIN32
 #include <dbt.h>
+
+namespace SS {
 static WNDPROC sdl_window_proc = NULL;				// Window proc used by SDL
 
 extern void SysMediaArrived(void);
@@ -2336,5 +2338,7 @@ void video_set_dirty_area(int x, int y, int w, int h)
 	// XXX handle dirty bounding boxes for non-VOSF modes
 }
 #endif
+
+}  // namespace SS
 
 #endif	// ends: SDL version check

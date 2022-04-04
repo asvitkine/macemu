@@ -30,6 +30,8 @@ extern "C" {
 
 #include "eject_nt.h"
 
+namespace SS {
+
 LPTSTR szVolumeFormat = TEXT("\\\\.\\%c:");
 LPTSTR szRootFormat = TEXT("%c:\\");
 LPTSTR szErrorFormat = TEXT("Error %d: %s\n");
@@ -187,3 +189,5 @@ BOOL EjectVolume( TCHAR cDriveLetter, BOOL reload )
 }
 
 } // extern "C"
+
+}  // namespace SS

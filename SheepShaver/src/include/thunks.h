@@ -23,6 +23,8 @@
 
 #include "cpu_emulation.h"
 
+namespace SS {
+
 /*
  *  Native function invocation
  */
@@ -218,5 +220,7 @@ struct SheepString : public SheepVar
 	char *value() const
 		{ return (char *)Mac2HostAddr(addr()); }
 };
+
+}  // namespace SS
 
 #endif

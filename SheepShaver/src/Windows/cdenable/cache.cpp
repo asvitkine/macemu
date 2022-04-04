@@ -29,6 +29,8 @@
 #include "sysdeps.h"
 #include "cache.h"
 
+namespace SS {
+
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -179,3 +181,5 @@ void cache_remove( cachetype *cptr, int block, int ss )
 #ifdef __cplusplus
 } // extern "C"
 #endif
+
+}  // namespace SS

@@ -40,6 +40,8 @@
 #define DEBUG 1
 #include "debug.h"
 
+namespace SS {
+
 
 // Constants
 const uint32 SIG_STACK_SIZE = 0x10000;		// Size of signal stack
@@ -344,3 +346,5 @@ int main(void)
 	paranoia_check();
 }
 #endif
+
+}  // namespace SS

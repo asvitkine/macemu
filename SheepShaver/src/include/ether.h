@@ -21,6 +21,8 @@
 #ifndef ETHER_H
 #define ETHER_H
 
+namespace SS {
+
 struct queue;
 struct msgb;
 typedef struct queue queue_t;
@@ -97,5 +99,7 @@ extern int32 num_rx_no_mem;
 extern int32 num_rx_dropped;
 extern int32 num_rx_stream_not_ready;
 extern int32 num_rx_no_unitdata_mem;
+
+}  // namespace SS
 
 #endif

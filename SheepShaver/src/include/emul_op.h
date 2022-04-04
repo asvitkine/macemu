@@ -21,6 +21,8 @@
 #ifndef EMUL_OP_H
 #define EMUL_OP_H
 
+namespace SS {
+
 // PowerPC opcodes
 const uint32 POWERPC_NOP = 0x60000000;
 const uint32 POWERPC_ILLEGAL = 0x00000000;
@@ -108,6 +110,8 @@ const uint16 M68K_EMUL_OP_EXTFS_HFS = M68K_EMUL_BREAK + OP_EXTFS_HFS;
 const uint16 M68K_EMUL_OP_IDLE_TIME = M68K_EMUL_BREAK + OP_IDLE_TIME;
 const uint16 M68K_EMUL_OP_IDLE_TIME_2 = M68K_EMUL_BREAK + OP_IDLE_TIME_2;
 
-extern "C" void EmulOp(M68kRegisters *r, uint32 pc, int selector);
+void EmulOp(M68kRegisters *r, uint32 pc, int selector);
+
+}  //  namespace SS
 
 #endif

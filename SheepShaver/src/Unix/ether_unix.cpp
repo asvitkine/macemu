@@ -106,6 +106,8 @@ using std::map;
 #define DEBUG 0
 #include "debug.h"
 
+namespace SS {
+
 #define STATISTICS 0
 #define MONITOR 0
 
@@ -941,6 +943,7 @@ void ether_stop_udp_thread(void)
 	fd = -1;
 }
 
+}  // namespace SS
 
 /*
  *  SLIRP output buffer glue
@@ -954,12 +957,13 @@ int slirp_can_output(void)
 
 void slirp_output(const uint8 *packet, int len)
 {
-	write(slirp_output_fd, packet, len);
+	write(SS::slirp_output_fd, packet, len);
 }
 
+namespace SS {
 void *slirp_receive_func(void *arg)
 {
-	const int slirp_input_fd = slirp_input_fds[0];
+	const int slirp_input_fd = SS::slirp_input_fds[0];
 
 	for (;;) {
 		// Wait for packets to arrive
@@ -1003,6 +1007,8 @@ void *slirp_receive_func(void *arg)
 	}
 	return NULL;
 }
+
+} // namespace SS
 #else
 int slirp_can_output(void)
 {
@@ -1014,6 +1020,7 @@ void slirp_output(const uint8 *packet, int len)
 }
 #endif
 
+namespace SS {
 
 /*
  *  Packet reception thread
@@ -1376,3 +1383,5 @@ static int read_packet()
 }
 
 #endif
+
+}  // namespace SS

@@ -33,6 +33,8 @@
 
 #include "semaphore.h"
 
+namespace SS {
+
 extern "C" {
 
 int sem_init(sem_t* sem, int pshared, unsigned int value)
@@ -141,3 +143,5 @@ int sem_getvalue(sem_t* sem, int* sval)
 }
 
 }
+
+}  // namespace SS

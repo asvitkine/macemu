@@ -26,6 +26,8 @@
 
 #include "xpram.h"
 
+namespace SS {
+
 
 // XPRAM file name and path
 const char XPRAM_FILE_NAME[] = ".basilisk_ii_xpram";
@@ -96,3 +98,5 @@ void ZapPRAM(void)
 	// Delete the XPRAM file
 	remove(full_path);
 }
+
+}  // namespace SS

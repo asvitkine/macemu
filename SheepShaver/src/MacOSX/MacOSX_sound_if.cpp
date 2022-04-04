@@ -21,6 +21,8 @@
 #include "AudioBackEnd.h"
 #include "MacOSX_sound_if.h"
 
+namespace SS {
+
 OSXsoundOutput::OSXsoundOutput() :
   player(NULL),
   callback(NULL) {
@@ -84,3 +86,5 @@ int OSXsoundOutput::sendAudioBuffer(void *buffer, int numFrames) {
         
   return 0;
 }
+
+}  // namespace SS

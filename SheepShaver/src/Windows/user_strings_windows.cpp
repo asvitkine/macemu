@@ -22,6 +22,8 @@
 #include "user_strings.h"
 #include "util_windows.h"
 
+namespace SS {
+
 // Platform-specific string definitions
 user_string_def platform_strings[] = {
 	// Common strings that have a platform-specific variant
@@ -173,3 +175,5 @@ const char *GetString(int num)
 	}
 	return NULL;
 }
+
+}  // namespace SS

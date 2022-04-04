@@ -22,7 +22,11 @@
 	0x48,0x81,0xC2,0x00,0x00,0x00,0x00
 
 #ifdef DYNGEN_IMPL
+namespace SS {
 extern uint8 gZeroPage[0x3000], gKernelData[0x2000];
+}
+using SS::gZeroPage;
+using SS::gKernelData;
 #endif
 
 #ifndef DEFINE_CST

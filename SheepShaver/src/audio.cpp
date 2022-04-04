@@ -37,6 +37,8 @@
 #define DEBUG 0
 #include "debug.h"
 
+namespace SS {
+
 
 // Supported sample rates, sizes and channels
 vector<uint32> audio_sample_rates;
@@ -831,3 +833,5 @@ int16 SoundInClose(uint32 pb, uint32 dce)
 	D(bug("SoundInClose\n"));
 	return noErr;
 }
+
+}  // namespace SS

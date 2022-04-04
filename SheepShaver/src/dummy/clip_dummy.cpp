@@ -26,6 +26,8 @@
 #define DEBUG 0
 #include "debug.h"
 
+namespace SS {
+
 
 /*
  *  Initialization
@@ -79,3 +81,5 @@ void PutScrap(uint32 type, void *scrap, int32 length)
 			break;
 	}
 }
+
+}  // namespace SS

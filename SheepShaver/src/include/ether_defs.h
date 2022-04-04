@@ -78,6 +78,8 @@
 	 *(uint16*)(((uint8*)(p1))+4) == 0 )
 
 
+namespace SS {
+
 /*
  *  Constants
  */
@@ -559,5 +561,7 @@ struct T8022AddressStruct {
 #ifdef PRAGMA_ALIGN_SUPPORTED
 #pragma options align=reset
 #endif
+
+}  // namespace SS
 
 #endif

@@ -42,6 +42,8 @@
 
 #ifdef __HAIKU__
 #include <fs_volume.h>
+
+namespace SS {
 #define unmount(x) fs_unmount_volume(x, 0)
 #endif
 
@@ -839,3 +841,5 @@ void SysCDGetVolume(void *arg, uint8 &left, uint8 &right)
 		}
 	}
 }
+
+}  // namespace SS

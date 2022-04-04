@@ -68,6 +68,8 @@
 #define DEBUG 0
 #include "debug.h"
 
+namespace SS {
+
 
 // File system global data and 68k routines
 enum {
@@ -2287,3 +2289,5 @@ int16 ExtFSHFS(uint32 vcb, uint16 selectCode, uint32 paramBlock, uint32 globalsP
 			return paramErr;
 	}
 }
+
+}  // namespace SS

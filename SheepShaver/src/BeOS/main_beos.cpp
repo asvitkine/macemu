@@ -85,6 +85,8 @@
 #define DEBUG 0
 #include "debug.h"
 
+namespace SS {
+
 // Enable Execute68k() safety checks?
 #define SAFE_EXEC_68K 0
 
@@ -2013,3 +2015,5 @@ bool ChoiceAlert(const char *text, const char *pos, const char *neg)
 	BAlert *alert = new BAlert(GetString(STR_WARNING_ALERT_TITLE), str, pos, neg, NULL, B_WIDTH_AS_USUAL, B_INFO_ALERT);
 	return alert->Go() == 0;
 }
+
+}  // namespace SS

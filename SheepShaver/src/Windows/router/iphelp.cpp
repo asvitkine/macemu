@@ -40,6 +40,8 @@
 
 #include "debug.h"
 
+namespace SS {
+
 
 void make_icmp_checksum( icmp_t *icmp, int len )
 {
@@ -234,3 +236,5 @@ void error_winsock_2_icmp( int err, ip_t *ip_err, int dlen_err )
 		}
 	}
 }
+
+}  // namespace SS

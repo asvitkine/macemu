@@ -2631,19 +2631,21 @@ sigsegv_address_t sigsegv_get_fault_instruction_address(sigsegv_info_t *SIP)
 #define EXTERN extern
 #endif
 
-EXTERN uint8_t gZeroPage[0x3000], gKernelData[0x2000];
-EXTERN uint32_t RAMBase, ROMBase, ROMEnd;
+namespace SS {
+    EXTERN uint8_t gZeroPage[0x3000], gKernelData[0x2000];
+	EXTERN uint32_t RAMBase, ROMBase, ROMEnd;
+}
 
 template<typename T> T safeLoad(uint32_t a) {
-	if (a < 0x3000) return *(T *)&gZeroPage[a];
-	else if ((a & ~0x1fff) == 0x68ffe000 || (a & ~0x1fff) == 0x5fffe000) return *(T *)&gKernelData[a & 0x1fff];
-	else if (a >= RAMBase && a < ROMEnd) return *(T *)(uint64_t)a;
+	if (a < 0x3000) return *(T *)&SS::gZeroPage[a];
+	else if ((a & ~0x1fff) == 0x68ffe000 || (a & ~0x1fff) == 0x5fffe000) return *(T *)&SS::gKernelData[a & 0x1fff];
+	else if (a >= SS::RAMBase && a < SS::ROMEnd) return *(T *)(uint64_t)a;
 	return 0;
 }
 template<typename T> void safeStore(uint32_t a, T d) {
-	if (a < 0x3000) *(T *)&gZeroPage[a] = d;
-	else if ((a & ~0x1fff) == 0x68ffe000 || (a & ~0x1fff) == 0x5fffe000) *(T *)&gKernelData[a & 0x1fff] = d;
-	else if (a >= RAMBase && a < ROMBase) *(T *)(uint64_t)a = d;
+	if (a < 0x3000) *(T *)&SS::gZeroPage[a] = d;
+	else if ((a & ~0x1fff) == 0x68ffe000 || (a & ~0x1fff) == 0x5fffe000) *(T *)&SS::gKernelData[a & 0x1fff] = d;
+	else if (a >= SS::RAMBase && a < SS::ROMBase) *(T *)(uint64_t)a = d;
 }
 
 #endif
@@ -3258,6 +3260,8 @@ void sigsegv_set_dump_state(sigsegv_state_dumper_t handler)
 #include <sys/mman.h>
 #endif
 #include "vm_alloc.h"
+
+namespace SS {
 
 const int REF_INDEX = 123;
 const int REF_VALUE = 45;

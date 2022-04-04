@@ -21,7 +21,11 @@
 #ifndef VERSION_H
 #define VERSION_H
 
+namespace SS {
+
 const int VERSION_MAJOR = 2;
 const int VERSION_MINOR = 5;
+
+}  // namespace SS
 
 #endif

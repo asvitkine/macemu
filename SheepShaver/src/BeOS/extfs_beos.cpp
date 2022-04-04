@@ -41,6 +41,8 @@
 #define DEBUG 0
 #include "debug.h"
 
+namespace SS {
+
 
 // Default Finder flags
 const uint16 DEFAULT_FINDER_FLAGS = kHasBeenInited;
@@ -487,3 +489,5 @@ const char *macroman_to_host_encoding(const char *filename)
 	buffer[size] = 0;
 	return buffer;
 }
+
+}  // namespace SS

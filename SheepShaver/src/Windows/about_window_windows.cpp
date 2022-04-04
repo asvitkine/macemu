@@ -20,6 +20,8 @@
 
 #include "about_window.h"
 
+namespace SS {
+
 
 /*
  *  Open "About" window
@@ -28,3 +30,5 @@
 void OpenAboutWindow(void)
 {
 }
+
+}  // namespace SS

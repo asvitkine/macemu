@@ -31,6 +31,8 @@
 
 #include "sheep_net.h"
 
+namespace SS {
+
 #define DEBUG 0
 
 #if DEBUG==1
@@ -292,3 +294,5 @@ extern "C" BNetProtocol *open_protocol(const char *device)
 	return dev;
 }
 #pragma export off
+
+}  // namespace SS

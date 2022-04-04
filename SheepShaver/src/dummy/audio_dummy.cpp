@@ -26,6 +26,8 @@
 #define DEBUG 0
 #include "debug.h"
 
+namespace SS {
+
 
 /*
  *  Initialization
@@ -152,3 +154,5 @@ void audio_set_speaker_mute(bool mute)
 void audio_set_speaker_volume(uint32 vol)
 {
 }
+
+}  // namespace SS

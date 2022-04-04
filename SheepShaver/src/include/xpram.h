@@ -21,6 +21,8 @@
 #ifndef XPRAM_H
 #define XPRAM_H
 
+namespace SS {
+
 #if POWERPC_ROM
 const int XPRAM_SIZE = 8192;
 #else
@@ -36,5 +38,7 @@ extern void XPRAMExit(void);
 extern void LoadXPRAM(const char *vmdir);
 extern void SaveXPRAM(void);
 extern void ZapPRAM(void);
+
+}  // namespace SS
 
 #endif

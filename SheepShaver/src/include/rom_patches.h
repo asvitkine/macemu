@@ -21,6 +21,8 @@
 #ifndef ROM_PATCHES_H
 #define ROM_PATCHES_H
 
+namespace SS {
+
 // ROM types
 enum {
 	ROMTYPE_TNT,
@@ -38,5 +40,7 @@ extern void InstallDrivers(void);
 
 extern void AddSifter(uint32 type, int16 id);
 extern bool FindSifter(uint32 type, int16 id);
+
+}  // namespace SS
 
 #endif

@@ -35,6 +35,8 @@
 #define DEBUG 0
 #include "debug.h"
 
+namespace SS {
+
 // Packet types
 enum {
 	kPktDIX				= 0,
@@ -1736,3 +1738,5 @@ EthernetPacket::~EthernetPacket()
 	}
 }
 #endif
+
+}  // namespace SS

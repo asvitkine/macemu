@@ -21,6 +21,8 @@
 #ifndef DISK_H
 #define DISK_H
 
+namespace SS {
+
 const int DiskRefNum = -63;				// RefNum of driver
 const uint16 DiskDriverFlags = 0x6f04;	// Driver flags
 
@@ -39,5 +41,7 @@ extern int16 DiskOpen(uint32 pb, uint32 dce);
 extern int16 DiskPrime(uint32 pb, uint32 dce);
 extern int16 DiskControl(uint32 pb, uint32 dce);
 extern int16 DiskStatus(uint32 pb, uint32 dce);
+
+}  // namespace SS
 
 #endif

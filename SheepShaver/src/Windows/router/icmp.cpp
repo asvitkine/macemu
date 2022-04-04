@@ -42,6 +42,8 @@
 
 #include "debug.h"
 
+namespace SS {
+
 
 // Saved for cleanup.
 static socket_t *icmp_incoming_s = 0;
@@ -219,3 +221,5 @@ void write_icmp( icmp_t *icmp, int len )
 		D(bug("Could not create raw socket for icmp\r\n" ));
 	}
 }
+
+}  // namespace SS

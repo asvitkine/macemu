@@ -36,6 +36,8 @@
 #define DEBUG 0
 #include "debug.h"
 
+namespace SS {
+
 
 // Error codes
 enum {
@@ -346,3 +348,5 @@ int16 SCSIMgrBusy(void)
 //	D(bug("SCSIMgrBusy\n"));
 	return phase != PH_FREE;
 }
+
+}  // namespace SS

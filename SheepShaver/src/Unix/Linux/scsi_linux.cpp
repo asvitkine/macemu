@@ -36,6 +36,8 @@
 #define DEBUG 0
 #include "debug.h"
 
+namespace SS {
+
 
 // Global variables
 static int fds[8];				// fd's for 8 units
@@ -269,3 +271,5 @@ bool scsi_send_cmd(size_t data_length, bool reading, int sg_size, uint8 **sg_ptr
 	}
 	return res >= 0;
 }
+
+}  // namespace SS

@@ -1,3 +1,4 @@
+namespace SS {
 template void powerpc_cpu::execute_addition<operand_RA, operand_RB, operand_NONE, CA_BIT_0, OE_BIT_G, RC_BIT_G>(uint32);
 template void powerpc_cpu::execute_addition<operand_RA, operand_RB, operand_NONE, CA_BIT_1, OE_BIT_G, RC_BIT_G>(uint32);
 template void powerpc_cpu::execute_addition<operand_RA, operand_RB, operand_XER_CA, CA_BIT_1, OE_BIT_G, RC_BIT_G>(uint32);
@@ -305,3 +306,5 @@ template void powerpc_cpu::execute_vector_unpack_pixel<1>(uint32);
 template void powerpc_cpu::execute_vector_unpack<1, operand_vD_V8HIms, operand_vB_V16QIms>(uint32);
 template void powerpc_cpu::execute_vector_unpack<1, operand_vD_V4SIs, operand_vB_V8HIms>(uint32);
 template void powerpc_cpu::execute_vector_arith<op_xor_64, operand_vD_V2DI, operand_vA_V2DI, operand_vB_V2DI, operand_vC_NONE, fake_bit_field< bool, false >, 0 >(uint32);
+
+}  // namespace SS

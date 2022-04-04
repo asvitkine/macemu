@@ -57,6 +57,8 @@
 
 #include "debug.h"
 
+namespace SS {
+
 
 // Ethernet device types
 enum {
@@ -1738,3 +1740,5 @@ static int slirp_add_redir(const char *redir_str)
 #if DEBUG
 #pragma optimize("",on)
 #endif
+
+}  // namespace SS

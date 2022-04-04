@@ -108,6 +108,8 @@ static void extfs_log_write( char *s )
 #define DEBUG 0
 #include "debug.h"
 
+namespace SS {
+
 #endif // DEBUG_EXTFS
 
 int my_errno = 0;
@@ -1157,3 +1159,5 @@ int my_utime( const char *path, struct my_utimbuf * my_times )
 	}
 	return -1;
 }
+
+}  // namespace SS

@@ -43,6 +43,8 @@
 
 #include "debug.h"
 
+namespace SS {
+
 
 socket_t::socket_t( int _proto )
 {
@@ -264,3 +266,5 @@ void close_all_sockets()
 	}
 	LeaveCriticalSection( &router_section );
 }
+
+}  // namespace SS

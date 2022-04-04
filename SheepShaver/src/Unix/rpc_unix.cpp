@@ -46,6 +46,8 @@
 #define DEBUG 0
 #include "debug.h"
 
+namespace SS {
+
 #define NON_BLOCKING_IO 0
 
 #if defined __linux__
@@ -1260,3 +1262,5 @@ int rpc_method_send_reply(rpc_connection_t *connection, ...)
 	return error;
   return RPC_ERROR_NO_ERROR;
 }
+
+}  // namespace SS

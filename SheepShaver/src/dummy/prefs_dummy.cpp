@@ -20,6 +20,8 @@
 
 #include "sysdeps.h"
 
+namespace SS {
+
 /*
  *  Initialization
  */
@@ -36,3 +38,5 @@ void prefs_exit(void)
 {
 }
 
+
+}  // namespace SS

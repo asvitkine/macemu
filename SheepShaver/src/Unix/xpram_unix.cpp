@@ -24,6 +24,8 @@
 
 #include "xpram.h"
 
+namespace SS {
+
 
 // XPRAM file name and path
 #if POWERPC_ROM
@@ -98,3 +100,5 @@ void ZapPRAM(void)
 	// Delete file
 	unlink(xpram_path);
 }
+
+}  // namespace SS

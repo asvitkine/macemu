@@ -23,6 +23,8 @@
 
 #include "macos_util.h"
 
+namespace SS {
+
 // Gestalt selectors
 enum {
 	gestaltFSAttr				= FOURCC('f','s',' ',' '),
@@ -555,5 +557,8 @@ enum {	// FSDRec struct
 	fsdDICI = 172,
 	SIZEOF_FSDRec = 196
 };
+
+}  // namespace SS
+
 
 #endif

@@ -21,6 +21,8 @@
 #ifndef SERIAL_DEFS_H
 #define SERIAL_DEFS_H
 
+namespace SS {
+
 // Error codes
 enum {
 	rcvrErr		= -89,
@@ -165,5 +167,7 @@ enum {	 // SerSta struct
 	staDsrHold = 6,
 	staModemStatus = 7
 };
+
+}  // namespace SS
 
 #endif

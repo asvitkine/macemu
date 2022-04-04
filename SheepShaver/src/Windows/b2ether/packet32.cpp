@@ -62,6 +62,8 @@
 #define DEBUG 0
 #include "debug.h"
 
+namespace SS {
+
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -691,3 +693,5 @@ ULONG PacketGetAdapterNames( LPADAPTER lpAdapter, LPTSTR pStr, PULONG BufferSize
 #if DEBUG
 #pragma optimize("",on)
 #endif
+
+}  // namespace SS

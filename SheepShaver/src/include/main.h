@@ -21,6 +21,8 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+namespace SS {
+
 // Global variables
 extern void *TOC;				// TOC pointer
 extern void *R13;				// r13 register
@@ -76,6 +78,8 @@ extern void ClearInterruptFlag(uint32);
 extern void TriggerInterrupt(void);							// Trigger SIGUSR1 interrupt in emulator thread
 extern void DisableInterrupt(void);							// Disable SIGUSR1 interrupt (can be nested)
 extern void EnableInterrupt(void);							// Enable SIGUSR1 interrupt (can be nested)
+
+}  // namespace SS
 
 // Array length
 #if __cplusplus >= 201103L || (_MSC_VER >= 1900 && defined __cplusplus)

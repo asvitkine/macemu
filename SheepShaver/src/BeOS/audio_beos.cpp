@@ -34,6 +34,8 @@
 #define DEBUG 0
 #include "debug.h"
 
+namespace SS {
+
 
 // Global variables
 static int audio_irq_done_sem = -1;	// Signal from interrupt to streaming thread: data block read
@@ -340,3 +342,5 @@ void audio_set_speaker_mute(bool mute)
 void audio_set_speaker_volume(uint32 vol)
 {
 }
+
+}  // namespace SS
