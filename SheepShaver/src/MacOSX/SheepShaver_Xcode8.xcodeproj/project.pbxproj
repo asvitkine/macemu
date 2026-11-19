@@ -7,6 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AAAEB5EFA4A3BE0A0A3FCEB4 /* gfxaccelhost.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AAE1CAFBDCB3335B4DF9050A /* gfxaccelhost.cpp */; };
+		AAA9F13DC4603312511CC284 /* gfxaccel_resources.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA121D02A62D8E51EF974AB3 /* gfxaccel_resources.cpp */; };
+		AA949B61B6EACB6C238C82CE /* gfxaccel_resources_heap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA2B5E88045458B135F8BF58 /* gfxaccel_resources_heap.cpp */; };
+		AAD509CE729EF203BB7AE01C /* display_mode_controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA4A548A5018D07725B6B200 /* display_mode_controller.cpp */; };
+		AA9CB918AAEF97645B473DE2 /* gl_state.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA9537AED20993D56812CD99 /* gl_state.cpp */; };
+		AA835CA760214D236CBB70E7 /* gl_defer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA14D68F6BDCEAD690531925 /* gl_defer.cpp */; };
+		AA9A3FF21DEB338CD55C42F1 /* gl_thunks.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AAB1476BC30F5D93526357DE /* gl_thunks.cpp */; };
+		AABFB848C4C2B1F0F7E1EB7D /* dsp_engine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA1B4B1E742A5FE970242038 /* dsp_engine.cpp */; };
+		AA8BD376F9985123A4054A1A /* dsp_thunks.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AAE35AA8AED75BEAB4715352 /* dsp_thunks.cpp */; };
+		AA211D8694D0130EFAE17889 /* dsp_install_hooks.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AABC037F9355494F34B40F31 /* dsp_install_hooks.cpp */; };
+		AA47BE12691F30C00560D4FC /* dsp_mode_enumerate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA4A1883306EA152DFC426E3 /* dsp_mode_enumerate.cpp */; };
+		AAF1653AF41D7B5FEB7FAB9A /* dsp_alt_buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA3ECF1664EB1B5E21246622 /* dsp_alt_buffer.cpp */; };
+		AAFCC958FCF0B1905F24C060 /* dsp_clut_gamma.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA9DB05FDBB53951CD29501C /* dsp_clut_gamma.cpp */; };
+		AA3B6299E989A14F93A6707A /* dsp_flatten_restore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AAD4262B589B8DD1DDE2F387 /* dsp_flatten_restore.cpp */; };
+		AAEAC3458EDE9C8A58EA1BB8 /* glide_engine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA87DD2C9C9D61EE1D68D8EF /* glide_engine.cpp */; };
+		AABFBEF05A4AE5FDF5FD453C /* glide_pef_register.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AAC3CFCB58C257D15E08B4F0 /* glide_pef_register.cpp */; };
+		AAA7D969AFF5C0FBC92B4FA2 /* rave_engine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA8A44F9FCEF0E0720516AA2 /* rave_engine.cpp */; };
+		AAF232DE3C91F0B73458153C /* rave_thunks.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AAF3BC83F117F03AA03C5BF0 /* rave_thunks.cpp */; };
+		AAF94FA5F63CD311B3256601 /* sdlgpu_gl_compat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA3814298185D016D20D4D04 /* sdlgpu_gl_compat.cpp */; };
+		AA14BD2C02FCC0F8589CE465 /* dsp_dispatch_sdlgpu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA031FE67E2B38493A82DF82 /* dsp_dispatch_sdlgpu.cpp */; };
+		AA8CA7C474D401CC56A1FD2D /* dsp_draw_context_sdlgpu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AAF2BDD2AD34310122E9318B /* dsp_draw_context_sdlgpu.cpp */; };
+		AACCC86C494D3C80A09C6FF6 /* gl_dispatch_sdlgpu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AAFB9C1B4F99E6DDB6840222 /* gl_dispatch_sdlgpu.cpp */; };
+		AA6796CB9C9FEB50FE0C5E3C /* gl_engine_sdlgpu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AABF863744DEA592243F6402 /* gl_engine_sdlgpu.cpp */; };
+		AAC4FEA0BC8380BAF824B309 /* glide_dispatch_sdlgpu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA41CFC3106A21E57D428A2E /* glide_dispatch_sdlgpu.cpp */; };
+		AA2B668403D68B7CF8318D73 /* rave_draw_context_sdlgpu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA150762FEDE2BF085704996 /* rave_draw_context_sdlgpu.cpp */; };
+		AA197BB65AB33A2A69322A5D /* rave_dispatch_sdlgpu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AADC34E75BE3BB7150BFA552 /* rave_dispatch_sdlgpu.cpp */; };
+		AA324BEDF79C6388971C4435 /* glide_state_sdlgpu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AACD3DC91DBDBE7C9ABAD08A /* glide_state_sdlgpu.cpp */; };
+		AA8430EAEF88EB963F9C71E4 /* gl_compositor_sdlgpu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA4414ED69A3024A3059D910 /* gl_compositor_sdlgpu.cpp */; };
+		AA1C6D10AAA00FAF32D9CCC6 /* vbl_source_sdlgpu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA13C075133A193F51400A13 /* vbl_source_sdlgpu.cpp */; };
+		AA98A753B481FD61186C1912 /* gfxaccel_resources_sdlgpu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA96439F0C301C03CBF77900 /* gfxaccel_resources_sdlgpu.cpp */; };
+		AAC858EA1BF9EDB0B376D940 /* gfxaccel_resources_heap_sdlgpu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AAD4005E1CAD2EE0F5E607E1 /* gfxaccel_resources_heap_sdlgpu.cpp */; };
+		AA6C6211BAFFFCD4C55B5AE4 /* gfxaccel_arc_shim.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA018CAF2C158FFB501B12B7 /* gfxaccel_arc_shim.cpp */; };
+		AA3C8B805D5DE2A0768EB523 /* pso_archive_sdlgpu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AAB4DE9A6A7B84D276B0C3E9 /* pso_archive_sdlgpu.cpp */; };
+		AAC1D50D3CCBD2E5826CC772 /* nqd_sdlgpu_renderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5C4857455F6FFCF3D15700 /* nqd_sdlgpu_renderer.cpp */; };
+		AADB2FBE00C5C565B15A5406 /* rave_sdlgpu_renderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AAE04F498DAA695BFA90415A /* rave_sdlgpu_renderer.cpp */; };
+		AA08B55BFA5F7FF218F68C60 /* gl_ffp_sdlgpu_renderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA54BD6502452189422D818E /* gl_ffp_sdlgpu_renderer.cpp */; };
+		AA3AEF53E9C8E62343C06630 /* dsp_sdlgpu_renderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA3BE5C51FC0D210D1FA55C7 /* dsp_sdlgpu_renderer.cpp */; };
+		AA28BE1204E463E79C590C15 /* glide_sdlgpu_renderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AADDA0118979D42EC30B5D63 /* glide_sdlgpu_renderer.cpp */; };
 		08003F8C1E0624D100A3ADAB /* basic-dyngen-ops-x86_32.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 08003F851E0624D100A3ADAB /* basic-dyngen-ops-x86_32.hpp */; };
 		08003F8E1E0624D100A3ADAB /* basic-dyngen-ops.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 08003F871E0624D100A3ADAB /* basic-dyngen-ops.hpp */; };
 		08003F8F1E0624D100A3ADAB /* ppc-dyngen-ops-x86_32.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 08003F881E0624D100A3ADAB /* ppc-dyngen-ops-x86_32.hpp */; };
@@ -46,7 +84,7 @@
 		0856D05F14A99EF1000B1711 /* rom_patches.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0856CE8C14A99EF0000B1711 /* rom_patches.cpp */; };
 		0856D06014A99EF1000B1711 /* rsrc_patches.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0856CE8D14A99EF0000B1711 /* rsrc_patches.cpp */; };
 		0856D06114A99EF1000B1711 /* scsi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0856CE8E14A99EF0000B1711 /* scsi.cpp */; };
-		0856D06214A99EF1000B1711 /* audio_sdl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0856CE9014A99EF0000B1711 /* audio_sdl.cpp */; };
+		0856D06214A99EF1000B1711 /* audio_sdl3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0856CE9014A99EF0000B1711 /* audio_sdl3.cpp */; };
 		0856D06614A99EF1000B1711 /* serial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0856CE9514A99EF0000B1711 /* serial.cpp */; };
 		0856D07B14A99EF1000B1711 /* sony.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0856CEC014A99EF0000B1711 /* sony.cpp */; };
 		0856D07C14A99EF1000B1711 /* thunks.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0856CEC114A99EF0000B1711 /* thunks.cpp */; };
@@ -83,13 +121,13 @@
 		5DE93B46247C71F200B2C821 /* adb.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D3967BF2328D315003925D6 /* adb.cpp */; };
 		5DF4CB7F22B5BD5D00512A86 /* audio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5DF4CB7E22B5BD5D00512A86 /* audio.cpp */; };
 		A7B1921418C35D4700791D8D /* DiskType.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B1921318C35D4700791D8D /* DiskType.m */; };
-		E413A40320CF7E6D00FBE967 /* video_sdl2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E413A40220CF7E6D00FBE967 /* video_sdl2.cpp */; };
-		E4150D1220D557820077C51A /* SDL2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E4150D1120D557820077C51A /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E413A40320CF7E6D00FBE967 /* video_sdlgpu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E413A40220CF7E6D00FBE967 /* video_sdlgpu.cpp */; };
+		E4150D1220D557820077C51A /* SDL3.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E4150D1120D557820077C51A /* SDL3.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E41936C420CFE64D003A7654 /* SDLMain.m in Sources */ = {isa = PBXBuildFile; fileRef = E41936C320CFE64D003A7654 /* SDLMain.m */; };
 		E4202603241250EE000508DF /* runtool.c in Sources */ = {isa = PBXBuildFile; fileRef = E4202602241250EE000508DF /* runtool.c */; };
 		E420260524125182000508DF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E420260424125182000508DF /* Security.framework */; };
 		E420260B24125442000508DF /* etherhelpertool in Resources */ = {isa = PBXBuildFile; fileRef = E420260A2412540D000508DF /* etherhelpertool */; };
-		E420910120D0C4FA0094654F /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E420910020D0C4FA0094654F /* SDL2.framework */; };
+		E420910120D0C4FA0094654F /* SDL3.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E420910020D0C4FA0094654F /* SDL3.xcframework */; };
 		E444DC1520C8F06700DD29C9 /* pict.c in Sources */ = {isa = PBXBuildFile; fileRef = E444DC1420C8F06700DD29C9 /* pict.c */; };
 		E447067025D904D500EA2C14 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E447066F25D904D500EA2C14 /* Metal.framework */; };
 		E44C460520D262B0000583AE /* tftp.c in Sources */ = {isa = PBXBuildFile; fileRef = E44C45DC20D262AD000583AE /* tftp.c */; };
@@ -135,7 +173,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E4150D1220D557820077C51A /* SDL2.framework in Embed Frameworks */,
+				E4150D1220D557820077C51A /* SDL3.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,6 +181,53 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AA05CF0747DC63F16C8318AE /* gfxaccel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = gfxaccel.cpp; path = ../gfxaccel.cpp; sourceTree = "<group>"; };
+		AAE1CAFBDCB3335B4DF9050A /* gfxaccelhost.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = gfxaccelhost.cpp; path = ../gfxaccel/gfxaccelhost.cpp; sourceTree = "<group>"; };
+		AA121D02A62D8E51EF974AB3 /* gfxaccel_resources.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = gfxaccel_resources.cpp; path = ../gfxaccel/gfxaccel_resources.cpp; sourceTree = "<group>"; };
+		AA2B5E88045458B135F8BF58 /* gfxaccel_resources_heap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = gfxaccel_resources_heap.cpp; path = ../gfxaccel/gfxaccel_resources_heap.cpp; sourceTree = "<group>"; };
+		AA4A548A5018D07725B6B200 /* display_mode_controller.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = display_mode_controller.cpp; path = ../gfxaccel/display_mode_controller.cpp; sourceTree = "<group>"; };
+		AAE30DB884A78C776830B527 /* gl_engine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = gl_engine.cpp; path = ../gfxaccel/gl_engine.cpp; sourceTree = "<group>"; };
+		AA9537AED20993D56812CD99 /* gl_state.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = gl_state.cpp; path = ../gfxaccel/gl_state.cpp; sourceTree = "<group>"; };
+		AA7721957209614965F85E33 /* gl_dispatch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = gl_dispatch.cpp; path = ../gfxaccel/gl_dispatch.cpp; sourceTree = "<group>"; };
+		AA14D68F6BDCEAD690531925 /* gl_defer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = gl_defer.cpp; path = ../gfxaccel/gl_defer.cpp; sourceTree = "<group>"; };
+		AAB1476BC30F5D93526357DE /* gl_thunks.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = gl_thunks.cpp; path = ../gfxaccel/gl_thunks.cpp; sourceTree = "<group>"; };
+		AA1B4B1E742A5FE970242038 /* dsp_engine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = dsp_engine.cpp; path = ../gfxaccel/dsp_engine.cpp; sourceTree = "<group>"; };
+		AAE35AA8AED75BEAB4715352 /* dsp_thunks.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = dsp_thunks.cpp; path = ../gfxaccel/dsp_thunks.cpp; sourceTree = "<group>"; };
+		AABC037F9355494F34B40F31 /* dsp_install_hooks.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = dsp_install_hooks.cpp; path = ../gfxaccel/dsp_install_hooks.cpp; sourceTree = "<group>"; };
+		AA4A1883306EA152DFC426E3 /* dsp_mode_enumerate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = dsp_mode_enumerate.cpp; path = ../gfxaccel/dsp_mode_enumerate.cpp; sourceTree = "<group>"; };
+		AA2CB34048F9EB85AE24AD54 /* dsp_draw_context.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = dsp_draw_context.cpp; path = ../gfxaccel/dsp_draw_context.cpp; sourceTree = "<group>"; };
+		AAB13387076D39C48332B339 /* dsp_dispatch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = dsp_dispatch.cpp; path = ../gfxaccel/dsp_dispatch.cpp; sourceTree = "<group>"; };
+		AA3ECF1664EB1B5E21246622 /* dsp_alt_buffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = dsp_alt_buffer.cpp; path = ../gfxaccel/dsp_alt_buffer.cpp; sourceTree = "<group>"; };
+		AA9DB05FDBB53951CD29501C /* dsp_clut_gamma.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = dsp_clut_gamma.cpp; path = ../gfxaccel/dsp_clut_gamma.cpp; sourceTree = "<group>"; };
+		AAD4262B589B8DD1DDE2F387 /* dsp_flatten_restore.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = dsp_flatten_restore.cpp; path = ../gfxaccel/dsp_flatten_restore.cpp; sourceTree = "<group>"; };
+		AA87DD2C9C9D61EE1D68D8EF /* glide_engine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = glide_engine.cpp; path = ../gfxaccel/glide_engine.cpp; sourceTree = "<group>"; };
+		AA99117983B9A6267E3DD4E6 /* glide_dispatch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = glide_dispatch.cpp; path = ../gfxaccel/glide_dispatch.cpp; sourceTree = "<group>"; };
+		AAC3CFCB58C257D15E08B4F0 /* glide_pef_register.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = glide_pef_register.cpp; path = ../gfxaccel/glide_pef_register.cpp; sourceTree = "<group>"; };
+		AA88887D2AAD324E5DEBCA44 /* glide_state.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = glide_state.cpp; path = ../gfxaccel/glide_state.cpp; sourceTree = "<group>"; };
+		AA8A44F9FCEF0E0720516AA2 /* rave_engine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = rave_engine.cpp; path = ../gfxaccel/rave_engine.cpp; sourceTree = "<group>"; };
+		AAF3BC83F117F03AA03C5BF0 /* rave_thunks.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = rave_thunks.cpp; path = ../gfxaccel/rave_thunks.cpp; sourceTree = "<group>"; };
+		AA7BCF860B2FE12DF73C5999 /* rave_draw_context.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = rave_draw_context.cpp; path = ../gfxaccel/rave_draw_context.cpp; sourceTree = "<group>"; };
+		AA990A2E98CF015247150CAF /* rave_dispatch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = rave_dispatch.cpp; path = ../gfxaccel/rave_dispatch.cpp; sourceTree = "<group>"; };
+		AA3814298185D016D20D4D04 /* sdlgpu_gl_compat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sdlgpu_gl_compat.cpp; path = ../gfxaccel/sdlgpu/sdlgpu_gl_compat.cpp; sourceTree = "<group>"; };
+		AA031FE67E2B38493A82DF82 /* dsp_dispatch_sdlgpu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = dsp_dispatch_sdlgpu.cpp; path = ../gfxaccel/sdlgpu/dsp_dispatch_sdlgpu.cpp; sourceTree = "<group>"; };
+		AAF2BDD2AD34310122E9318B /* dsp_draw_context_sdlgpu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = dsp_draw_context_sdlgpu.cpp; path = ../gfxaccel/sdlgpu/dsp_draw_context_sdlgpu.cpp; sourceTree = "<group>"; };
+		AAFB9C1B4F99E6DDB6840222 /* gl_dispatch_sdlgpu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = gl_dispatch_sdlgpu.cpp; path = ../gfxaccel/sdlgpu/gl_dispatch_sdlgpu.cpp; sourceTree = "<group>"; };
+		AABF863744DEA592243F6402 /* gl_engine_sdlgpu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = gl_engine_sdlgpu.cpp; path = ../gfxaccel/sdlgpu/gl_engine_sdlgpu.cpp; sourceTree = "<group>"; };
+		AA41CFC3106A21E57D428A2E /* glide_dispatch_sdlgpu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = glide_dispatch_sdlgpu.cpp; path = ../gfxaccel/sdlgpu/glide_dispatch_sdlgpu.cpp; sourceTree = "<group>"; };
+		AA150762FEDE2BF085704996 /* rave_draw_context_sdlgpu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = rave_draw_context_sdlgpu.cpp; path = ../gfxaccel/sdlgpu/rave_draw_context_sdlgpu.cpp; sourceTree = "<group>"; };
+		AADC34E75BE3BB7150BFA552 /* rave_dispatch_sdlgpu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = rave_dispatch_sdlgpu.cpp; path = ../gfxaccel/sdlgpu/rave_dispatch_sdlgpu.cpp; sourceTree = "<group>"; };
+		AACD3DC91DBDBE7C9ABAD08A /* glide_state_sdlgpu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = glide_state_sdlgpu.cpp; path = ../gfxaccel/sdlgpu/glide_state_sdlgpu.cpp; sourceTree = "<group>"; };
+		AA4414ED69A3024A3059D910 /* gl_compositor_sdlgpu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = gl_compositor_sdlgpu.cpp; path = ../gfxaccel/sdlgpu/gl_compositor_sdlgpu.cpp; sourceTree = "<group>"; };
+		AA13C075133A193F51400A13 /* vbl_source_sdlgpu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vbl_source_sdlgpu.cpp; path = ../gfxaccel/sdlgpu/vbl_source_sdlgpu.cpp; sourceTree = "<group>"; };
+		AA96439F0C301C03CBF77900 /* gfxaccel_resources_sdlgpu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = gfxaccel_resources_sdlgpu.cpp; path = ../gfxaccel/sdlgpu/gfxaccel_resources_sdlgpu.cpp; sourceTree = "<group>"; };
+		AAD4005E1CAD2EE0F5E607E1 /* gfxaccel_resources_heap_sdlgpu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = gfxaccel_resources_heap_sdlgpu.cpp; path = ../gfxaccel/sdlgpu/gfxaccel_resources_heap_sdlgpu.cpp; sourceTree = "<group>"; };
+		AA018CAF2C158FFB501B12B7 /* gfxaccel_arc_shim.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = gfxaccel_arc_shim.cpp; path = ../gfxaccel/sdlgpu/gfxaccel_arc_shim.cpp; sourceTree = "<group>"; };
+		AAB4DE9A6A7B84D276B0C3E9 /* pso_archive_sdlgpu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = pso_archive_sdlgpu.cpp; path = ../gfxaccel/sdlgpu/pso_archive_sdlgpu.cpp; sourceTree = "<group>"; };
+		AA5C4857455F6FFCF3D15700 /* nqd_sdlgpu_renderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = nqd_sdlgpu_renderer.cpp; path = ../gfxaccel/sdlgpu/nqd_sdlgpu_renderer.cpp; sourceTree = "<group>"; };
+		AAE04F498DAA695BFA90415A /* rave_sdlgpu_renderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = rave_sdlgpu_renderer.cpp; path = ../gfxaccel/sdlgpu/rave_sdlgpu_renderer.cpp; sourceTree = "<group>"; };
+		AA54BD6502452189422D818E /* gl_ffp_sdlgpu_renderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = gl_ffp_sdlgpu_renderer.cpp; path = ../gfxaccel/sdlgpu/gl_ffp_sdlgpu_renderer.cpp; sourceTree = "<group>"; };
+		AA3BE5C51FC0D210D1FA55C7 /* dsp_sdlgpu_renderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = dsp_sdlgpu_renderer.cpp; path = ../gfxaccel/sdlgpu/dsp_sdlgpu_renderer.cpp; sourceTree = "<group>"; };
+		AADDA0118979D42EC30B5D63 /* glide_sdlgpu_renderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = glide_sdlgpu_renderer.cpp; path = ../gfxaccel/sdlgpu/glide_sdlgpu_renderer.cpp; sourceTree = "<group>"; };
 		08003F851E0624D100A3ADAB /* basic-dyngen-ops-x86_32.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = "basic-dyngen-ops-x86_32.hpp"; path = "dyngen_precompiled/basic-dyngen-ops-x86_32.hpp"; sourceTree = "<group>"; };
 		08003F871E0624D100A3ADAB /* basic-dyngen-ops.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = "basic-dyngen-ops.hpp"; path = "dyngen_precompiled/basic-dyngen-ops.hpp"; sourceTree = "<group>"; };
 		08003F881E0624D100A3ADAB /* ppc-dyngen-ops-x86_32.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = "ppc-dyngen-ops-x86_32.hpp"; path = "dyngen_precompiled/ppc-dyngen-ops-x86_32.hpp"; sourceTree = "<group>"; };
@@ -269,7 +354,7 @@
 		0856CE8C14A99EF0000B1711 /* rom_patches.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = rom_patches.cpp; path = ../rom_patches.cpp; sourceTree = SOURCE_ROOT; };
 		0856CE8D14A99EF0000B1711 /* rsrc_patches.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = rsrc_patches.cpp; path = ../rsrc_patches.cpp; sourceTree = SOURCE_ROOT; };
 		0856CE8E14A99EF0000B1711 /* scsi.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = scsi.cpp; path = ../scsi.cpp; sourceTree = SOURCE_ROOT; };
-		0856CE9014A99EF0000B1711 /* audio_sdl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = audio_sdl.cpp; sourceTree = "<group>"; };
+		0856CE9014A99EF0000B1711 /* audio_sdl3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = audio_sdl3.cpp; path = ../../../BasiliskII/src/SDL/audio_sdl3.cpp; sourceTree = "<group>"; };
 		0856CE9114A99EF0000B1711 /* keycodes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = keycodes; sourceTree = "<group>"; };
 		0856CE9514A99EF0000B1711 /* serial.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = serial.cpp; path = ../serial.cpp; sourceTree = SOURCE_ROOT; };
 		0856CEC014A99EF0000B1711 /* sony.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sony.cpp; path = ../sony.cpp; sourceTree = SOURCE_ROOT; };
@@ -340,15 +425,15 @@
 		5DF4CB7E22B5BD5D00512A86 /* audio.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = audio.cpp; path = ../../../BasiliskII/src/audio.cpp; sourceTree = "<group>"; };
 		A7B1921218C35D4700791D8D /* DiskType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiskType.h; sourceTree = "<group>"; };
 		A7B1921318C35D4700791D8D /* DiskType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiskType.m; sourceTree = "<group>"; };
-		E413A40220CF7E6D00FBE967 /* video_sdl2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = video_sdl2.cpp; path = ../../../BasiliskII/src/SDL/video_sdl2.cpp; sourceTree = "<group>"; };
-		E4150D1120D557820077C51A /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = /Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
+		E413A40220CF7E6D00FBE967 /* video_sdlgpu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = video_sdlgpu.cpp; path = ../gfxaccel/sdlgpu/video_sdlgpu.cpp; sourceTree = "<group>"; };
+		E4150D1120D557820077C51A /* SDL3.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SDL3.xcframework; path = SDL3.xcframework; sourceTree = "<group>"; };
 		E41936C220CFE64D003A7654 /* SDLMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDLMain.h; path = ../../../BasiliskII/src/SDL/SDLMain.h; sourceTree = "<group>"; };
 		E41936C320CFE64D003A7654 /* SDLMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SDLMain.m; path = ../../../BasiliskII/src/SDL/SDLMain.m; sourceTree = "<group>"; };
 		E4202600241250E2000508DF /* etherhelpertool.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = etherhelpertool.c; sourceTree = "<group>"; };
 		E4202602241250EE000508DF /* runtool.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = runtool.c; sourceTree = "<group>"; };
 		E420260424125182000508DF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		E420260A2412540D000508DF /* etherhelpertool */ = {isa = PBXFileReference; lastKnownFileType = text; path = etherhelpertool; sourceTree = BUILT_PRODUCTS_DIR; };
-		E420910020D0C4FA0094654F /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = /Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
+		E420910020D0C4FA0094654F /* SDL3.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SDL3.xcframework; path = SDL3.xcframework; sourceTree = "<group>"; };
 		E4302EE21FBFE7FA00A5B500 /* lowmem.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lowmem.c; path = Darwin/lowmem.c; sourceTree = "<group>"; };
 		E444DC1420C8F06700DD29C9 /* pict.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = pict.c; path = ../pict.c; sourceTree = "<group>"; };
 		E447066F25D904D500EA2C14 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
@@ -412,7 +497,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E420910120D0C4FA0094654F /* SDL2.framework in Frameworks */,
+				E420910120D0C4FA0094654F /* SDL3.xcframework in Frameworks */,
 				E420260524125182000508DF /* Security.framework in Frameworks */,
 				0856D21514A9A6C6000B1711 /* IOKit.framework in Frameworks */,
 				08CD42DC14B7B85B009CA2A2 /* Cocoa.framework in Frameworks */,
@@ -450,7 +535,7 @@
 			isa = PBXGroup;
 			children = (
 				520A161230056291005DCC43 /* SheepShaver.icon */,
-				E4150D1120D557820077C51A /* SDL2.framework */,
+				E4150D1120D557820077C51A /* SDL3.xcframework */,
 				0856CCC814A99E30000B1711 /* Sources */,
 				08CD42DF14B7B865009CA2A2 /* Frameworks */,
 				0856CCC214A99E1C000B1711 /* Products */,
@@ -762,12 +847,12 @@
 		0856CE8F14A99EF0000B1711 /* SDL */ = {
 			isa = PBXGroup;
 			children = (
-				0856CE9014A99EF0000B1711 /* audio_sdl.cpp */,
+				0856CE9014A99EF0000B1711 /* audio_sdl3.cpp */,
 				0856CE9114A99EF0000B1711 /* keycodes */,
 				E41936C220CFE64D003A7654 /* SDLMain.h */,
 				E41936C320CFE64D003A7654 /* SDLMain.m */,
 				E4CBF46020CFC451009F40CC /* video_sdl.cpp */,
-				E413A40220CF7E6D00FBE967 /* video_sdl2.cpp */,
+				E413A40220CF7E6D00FBE967 /* video_sdlgpu.cpp */,
 			);
 			name = SDL;
 			path = ../SDL;
@@ -900,7 +985,7 @@
 			children = (
 				E447066F25D904D500EA2C14 /* Metal.framework */,
 				E420260424125182000508DF /* Security.framework */,
-				E420910020D0C4FA0094654F /* SDL2.framework */,
+				E420910020D0C4FA0094654F /* SDL3.xcframework */,
 				08CD42E714B7B8AA009CA2A2 /* Carbon.framework */,
 				08CD42DB14B7B85B009CA2A2 /* Cocoa.framework */,
 				0856D21414A9A6C6000B1711 /* IOKit.framework */,
@@ -1113,7 +1198,7 @@
 				0856D05F14A99EF1000B1711 /* rom_patches.cpp in Sources */,
 				0856D06014A99EF1000B1711 /* rsrc_patches.cpp in Sources */,
 				0856D06114A99EF1000B1711 /* scsi.cpp in Sources */,
-				0856D06214A99EF1000B1711 /* audio_sdl.cpp in Sources */,
+				0856D06214A99EF1000B1711 /* audio_sdl3.cpp in Sources */,
 				0856D06614A99EF1000B1711 /* serial.cpp in Sources */,
 				E456E2AD20C82B61006C8DC2 /* clip_macosx64.mm in Sources */,
 				E4202603241250EE000508DF /* runtool.c in Sources */,
@@ -1125,7 +1210,45 @@
 				E4CBF46120CFC451009F40CC /* video_sdl.cpp in Sources */,
 				0856D09814A99EF1000B1711 /* ether_unix.cpp in Sources */,
 				0856D0AA14A99EF1000B1711 /* main_unix.cpp in Sources */,
-				E413A40320CF7E6D00FBE967 /* video_sdl2.cpp in Sources */,
+				E413A40320CF7E6D00FBE967 /* video_sdlgpu.cpp in Sources */,
+				AAAEB5EFA4A3BE0A0A3FCEB4 /* gfxaccelhost.cpp in Sources */,
+				AAA9F13DC4603312511CC284 /* gfxaccel_resources.cpp in Sources */,
+				AA949B61B6EACB6C238C82CE /* gfxaccel_resources_heap.cpp in Sources */,
+				AAD509CE729EF203BB7AE01C /* display_mode_controller.cpp in Sources */,
+				AA9CB918AAEF97645B473DE2 /* gl_state.cpp in Sources */,
+				AA835CA760214D236CBB70E7 /* gl_defer.cpp in Sources */,
+				AA9A3FF21DEB338CD55C42F1 /* gl_thunks.cpp in Sources */,
+				AABFB848C4C2B1F0F7E1EB7D /* dsp_engine.cpp in Sources */,
+				AA8BD376F9985123A4054A1A /* dsp_thunks.cpp in Sources */,
+				AA211D8694D0130EFAE17889 /* dsp_install_hooks.cpp in Sources */,
+				AA47BE12691F30C00560D4FC /* dsp_mode_enumerate.cpp in Sources */,
+				AAF1653AF41D7B5FEB7FAB9A /* dsp_alt_buffer.cpp in Sources */,
+				AAFCC958FCF0B1905F24C060 /* dsp_clut_gamma.cpp in Sources */,
+				AA3B6299E989A14F93A6707A /* dsp_flatten_restore.cpp in Sources */,
+				AAEAC3458EDE9C8A58EA1BB8 /* glide_engine.cpp in Sources */,
+				AABFBEF05A4AE5FDF5FD453C /* glide_pef_register.cpp in Sources */,
+				AAA7D969AFF5C0FBC92B4FA2 /* rave_engine.cpp in Sources */,
+				AAF232DE3C91F0B73458153C /* rave_thunks.cpp in Sources */,
+				AAF94FA5F63CD311B3256601 /* sdlgpu_gl_compat.cpp in Sources */,
+				AA14BD2C02FCC0F8589CE465 /* dsp_dispatch_sdlgpu.cpp in Sources */,
+				AA8CA7C474D401CC56A1FD2D /* dsp_draw_context_sdlgpu.cpp in Sources */,
+				AACCC86C494D3C80A09C6FF6 /* gl_dispatch_sdlgpu.cpp in Sources */,
+				AA6796CB9C9FEB50FE0C5E3C /* gl_engine_sdlgpu.cpp in Sources */,
+				AAC4FEA0BC8380BAF824B309 /* glide_dispatch_sdlgpu.cpp in Sources */,
+				AA2B668403D68B7CF8318D73 /* rave_draw_context_sdlgpu.cpp in Sources */,
+				AA197BB65AB33A2A69322A5D /* rave_dispatch_sdlgpu.cpp in Sources */,
+				AA324BEDF79C6388971C4435 /* glide_state_sdlgpu.cpp in Sources */,
+				AA8430EAEF88EB963F9C71E4 /* gl_compositor_sdlgpu.cpp in Sources */,
+				AA1C6D10AAA00FAF32D9CCC6 /* vbl_source_sdlgpu.cpp in Sources */,
+				AA98A753B481FD61186C1912 /* gfxaccel_resources_sdlgpu.cpp in Sources */,
+				AAC858EA1BF9EDB0B376D940 /* gfxaccel_resources_heap_sdlgpu.cpp in Sources */,
+				AA6C6211BAFFFCD4C55B5AE4 /* gfxaccel_arc_shim.cpp in Sources */,
+				AA3C8B805D5DE2A0768EB523 /* pso_archive_sdlgpu.cpp in Sources */,
+				AAC1D50D3CCBD2E5826CC772 /* nqd_sdlgpu_renderer.cpp in Sources */,
+				AADB2FBE00C5C565B15A5406 /* rave_sdlgpu_renderer.cpp in Sources */,
+				AA08B55BFA5F7FF218F68C60 /* gl_ffp_sdlgpu_renderer.cpp in Sources */,
+				AA3AEF53E9C8E62343C06630 /* dsp_sdlgpu_renderer.cpp in Sources */,
+				AA28BE1204E463E79C590C15 /* glide_sdlgpu_renderer.cpp in Sources */,
 				0856D10614A99EF1000B1711 /* prefs_unix.cpp in Sources */,
 				0856D10714A99EF1000B1711 /* rpc_unix.cpp in Sources */,
 				0856D10814A99EF1000B1711 /* serial_unix.cpp in Sources */,
@@ -1141,7 +1264,6 @@
 				0856D11714A99EF1000B1711 /* user_strings.cpp in Sources */,
 				E44C460920D262B0000583AE /* tcp_input.c in Sources */,
 				0856D11814A99EF1000B1711 /* video.cpp in Sources */,
-				E41936C420CFE64D003A7654 /* SDLMain.m in Sources */,
 				E44C461220D262B0000583AE /* socket.c in Sources */,
 				0856D13F14A99EF1000B1711 /* xpram.cpp in Sources */,
 				0856D33914A9A704000B1711 /* VMSettingsController.mm in Sources */,
@@ -1185,10 +1307,14 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_ENABLE_MODULE_DEBUGGING = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/SDL3.xcframework/macos-arm64_x86_64",
+					/Library/Frameworks,
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_OPTIMIZATION_LEVEL = 3;
@@ -1198,9 +1324,18 @@
 					"_GNU_SOURCE=1",
 					_THREAD_SAFE,
 					_REENTRANT,
+					"SHEEPSHAVER=1",
+					"ENABLE_GFXACCEL=1",
+					"GFXACCEL_USE_OPENGL=1",
+					"GFXACCEL_USE_SDLGPU=1",
+					"USE_SDL3=1",
 				);
 				HEADER_SEARCH_PATHS = (
-					/Library/Frameworks/SDL2.framework/Headers,
+					"$(SRCROOT)/SDL3.xcframework/macos-arm64_x86_64/SDL3.framework/Headers",
+					../gfxaccel,
+					../gfxaccel/include,
+					../gfxaccel/sdlgpu,
+					../gfxaccel/gl,
 					./config/,
 					../Unix,
 					../MacOSX/Launcher,
@@ -1211,7 +1346,7 @@
 					../Unix/dyngen_precompiled,
 				);
 				INSTALL_PATH = /usr/local/lib;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				PRODUCT_NAME = kpx_cpu;
 				VALID_ARCHS = "x86_64 arm64";
@@ -1224,10 +1359,14 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_ENABLE_MODULE_DEBUGGING = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/SDL3.xcframework/macos-arm64_x86_64",
+					/Library/Frameworks,
+				);
 				GCC_DYNAMIC_NO_PIC = YES;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_OPTIMIZATION_LEVEL = 3;
@@ -1237,9 +1376,18 @@
 					"_GNU_SOURCE=1",
 					_THREAD_SAFE,
 					_REENTRANT,
+					"SHEEPSHAVER=1",
+					"ENABLE_GFXACCEL=1",
+					"GFXACCEL_USE_OPENGL=1",
+					"GFXACCEL_USE_SDLGPU=1",
+					"USE_SDL3=1",
 				);
 				HEADER_SEARCH_PATHS = (
-					/Library/Frameworks/SDL2.framework/Headers,
+					"$(SRCROOT)/SDL3.xcframework/macos-arm64_x86_64/SDL3.framework/Headers",
+					../gfxaccel,
+					../gfxaccel/include,
+					../gfxaccel/sdlgpu,
+					../gfxaccel/gl,
 					./config/,
 					../Unix,
 					../MacOSX/Launcher,
@@ -1250,7 +1398,7 @@
 					../Unix/dyngen_precompiled,
 				);
 				INSTALL_PATH = /usr/local/lib;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				PRODUCT_NAME = kpx_cpu;
 				VALID_ARCHS = "x86_64 arm64";
@@ -1289,9 +1437,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = SheepShaver;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CODE_SIGN_ENTITLEMENTS = SheepShaver.entitlements;
 				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/SDL3.xcframework/macos-arm64_x86_64",
+					/Library/Frameworks,
+				);
 				GCC_CW_ASM_SYNTAX = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
@@ -1308,6 +1460,11 @@
 					"_GNU_SOURCE=1",
 					_THREAD_SAFE,
 					_REENTRANT,
+					"SHEEPSHAVER=1",
+					"ENABLE_GFXACCEL=1",
+					"GFXACCEL_USE_OPENGL=1",
+					"GFXACCEL_USE_SDLGPU=1",
+					"USE_SDL3=1",
 					"BINCUE=1",
 					"USE_SDL_AUDIO=1",
 				);
@@ -1315,7 +1472,11 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
-					/Library/Frameworks/SDL2.framework/Headers,
+					"$(SRCROOT)/SDL3.xcframework/macos-arm64_x86_64/SDL3.framework/Headers",
+					../gfxaccel,
+					../gfxaccel/include,
+					../gfxaccel/sdlgpu,
+					../gfxaccel/gl,
 					./config/,
 					../Unix,
 					../MacOSX/Launcher,
@@ -1359,10 +1520,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = SheepShaver;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CODE_SIGN_ENTITLEMENTS = SheepShaver.entitlements;
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = NO;
-				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/SDL3.xcframework/macos-arm64_x86_64",
+					/Library/Frameworks,
+				);
 				GCC_CW_ASM_SYNTAX = NO;
 				GCC_DYNAMIC_NO_PIC = YES;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
@@ -1379,6 +1544,11 @@
 					"_GNU_SOURCE=1",
 					_THREAD_SAFE,
 					_REENTRANT,
+					"SHEEPSHAVER=1",
+					"ENABLE_GFXACCEL=1",
+					"GFXACCEL_USE_OPENGL=1",
+					"GFXACCEL_USE_SDLGPU=1",
+					"USE_SDL3=1",
 					"BINCUE=1",
 					"USE_SDL_AUDIO=1",
 				);
@@ -1386,7 +1556,11 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
-					/Library/Frameworks/SDL2.framework/Headers,
+					"$(SRCROOT)/SDL3.xcframework/macos-arm64_x86_64/SDL3.framework/Headers",
+					../gfxaccel,
+					../gfxaccel/include,
+					../gfxaccel/sdlgpu,
+					../gfxaccel/gl,
 					./config/,
 					../Unix,
 					../MacOSX/Launcher,
